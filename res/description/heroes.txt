@@ -1,0 +1,65 @@
+Abathur;Evolution Master;res/hero/abathur.png
+Alarak;Highlord of the Tal'darim;res/hero/alarak.png
+Anub'arak;Traitor King;res/hero/anubarak.png
+Artanis;Hierarch of the Daelaam;res/hero/artanis.png
+Arthas;The Lich King;res/hero/arthas.png
+Auriel;Archangel of Hope;res/hero/auriel.png
+Azmodan;Lord of Sin;res/hero/azmodan.png
+Brightwing;Faerie Dragon;res/hero/brightwing.png
+Cassia;Amazon Warmatron;res/hero/cassia.png
+Chen;Legendray Brewmaster;res/hero/chen.png
+Cho;Twilight's Hammer Chieftain;res/hero/cho.png
+Chromie;Keeper of Time;res/hero/chromie.png
+Dehaka;Primal Pack Leader;res/hero/dehaka.png
+Diablo;Lord of Terror;res/hero/diablo.png
+ETC;Rock God;res/hero/etc.png
+Falstad;Wildhammer Thane;res/hero/falstad.png
+Gall;Twilight's Hammer Chieftain;res/hero/gall.png
+Gazlowe;Boss of Ratchet;res/hero/gazlowe.png
+Greymane;Lord of the Worgen;res/hero/greymane.png
+Gul'dan;Darkness Incarnate;res/hero/guldan.png
+Illidan;The Betrayer;res/hero/illidan.png
+Jaina;Archmage;res/hero/jaina.png
+Johanna;Crusader of Zakarum;res/hero/johanna.png
+Kael'thas;The Sun King;res/hero/kaelthas.png
+Kerrigan;Queen of Blades;res/hero/kerrigan.png
+Kharazim;Verdani Monk;res/hero/kharazim.png
+Leoric;The Skeleton King;res/hero/leoric.png
+LiLi;World Wanderer;res/hero/lili.png
+Li-Ming;Rebellious Wizard;res/hero/liming.png
+Lt. Morales;Combat Medic;res/hero/ltmorales.png
+Lucio;Freedom Fighting DJ;res/hero/lucio.png
+Lunara;First Daughter of Cenarius;res/hero/lunara.png
+Malfurion;Archdruid;res/hero/malfurion.png
+Medivh;The Last Guardian;res/hero/medivh.png
+Muradin;Mountain King;res/hero/muradin.png
+Murky;Baby Murloc;res/hero/murky.png
+Nazeebo;Heretic Witch Doctor;res/hero/nazeebo.png
+Nova;Dominion Ghost;res/hero/nova.png
+Probius;Curious Probe;res/hero/probius.png
+Ragnaros;The Firelord;res/hero/ragnaros.png
+Raynor;Renegade Commander;res/hero/raynor.png
+Reghar;Shaman of the Earthen Ring;res/hero/reghar.png
+Rexxar;Champion of the Horde;res/hero/rexxar.png
+Samuro;The Blademaster;res/hero/samuro.png
+Sgt. Hammer;Siege Tank Operator;res/hero/sgthammer.png
+Sonya;Wandering Barbarian;res/hero/sonya.png
+Stitchies;Terror of Darkshire;res/hero/stitchies.png
+Sylvanas;The Banshee King;res/hero/sylvanas.png
+Tassadar;Savior of the Tamplar;res/hero/tassadar.png
+The Butcher;Flesh Carver;res/hero/thebutcher.png
+The Lost Vikings;Triple Trouble;res/hero/thelostvikings.png
+Thrall;Warcheif of the Horde;res/hero/thrall.png
+Tracer;Agent of Overwatch;res/hero/tracer.png
+Tychus;Notorious Outlaw;res/hero/tychus.png
+Tyrael;Archangel of Justice;res/hero/tyrael.png
+Tyrande;High Priestess of Elune;res/hero/tyrande.png
+Uther;The Lightbringer;res/hero/uther.png
+Valeera;Shadow of the Uncrowned;res/hero/valeera.png
+Valla;Demon Hunter;res/hero/valla.png
+Varian;High King of the Alliance;res/hero/varian.png
+Xul;Cryptic Necromancer;res/hero/xul.png
+Zagara;Broodmother of the Swarm;res/hero/zagara.png
+Zarya;Defender of Russia;res/hero/zarya.png
+Zeratul;Dark Prelate;res/hero/zeratul.png
+Zul'jin;Warlord of the Amani;res/hero/zuljin.png

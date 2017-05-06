@@ -4,10 +4,17 @@ import javax.json.Json;
 import javax.json.stream.JsonParser;
 import java.io.*;
 
+/**
+ * Class that read the JSON file given
+ */
 public class JSONFile {
     private String path;
     private String jsonText;
 
+    /**
+     * Constructor that set up the path of the JSON file
+     * @param path Path of the JSON file
+     */
     public JSONFile(String path) {
         this.path = path;
         try {
@@ -18,6 +25,10 @@ public class JSONFile {
         readJson();
     }
 
+    /**
+     * Reading method for JSON file
+     * @throws IOException Raise exception when file doesnt exist
+     */
     public void readFile() throws IOException {
         BufferedReader file = new BufferedReader(new FileReader(path));
         String chainTmp;
@@ -28,6 +39,9 @@ public class JSONFile {
         file.close();
     }
 
+    /**
+     * Reading method for JSON String
+     */
     private void readJson() {
         JsonParser parser = Json.createParser(new StringReader(jsonText));
         while (parser.hasNext()) {

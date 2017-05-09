@@ -1,11 +1,11 @@
 Heroes Talents
 
-Heroes Talents est un logicel visant à aider les joueurs de Heroes of the Storm
-Les objectifs sont multiples :
-- Montrer la liste de talents pour chaque heros du jeu
-- Sauvegarder les talents favoris de l'utilisateur
-- Charger les sauvegardes d'autres utilisateurs
-- Rechercher un heros par ses qualités
+Heroes Talents is a software aiming to help players of Heroes of the Storm
+Objectives are many :
+- Show list of talents for each character of the game
+- Save favorite talents and build of the user
+- Load saves of other users
+- Search heroes using keywords
 
-A propos de moi
-Je suis étudiant en DUT informatique. Ce projet est un moyen pour moi de m'exercer et comprendre les éléments qui ne sont pas nécessairement développé durant mes études.
+About me :
+I'm student in a 2-year university degree in computing in France. This project is a way for me to develop my skill in programming and understand elements that wasn't necessarily explain during my studies.

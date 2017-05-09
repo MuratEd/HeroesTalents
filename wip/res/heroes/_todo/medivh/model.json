@@ -1,0 +1,234 @@
+{
+   "id": "",
+   "name": "",
+   "title": "",
+   "description": "",
+   "icon": "",
+   "role": "",
+   "type": "",
+   "gender": "",
+   "franchise": "",
+   "difficulty": "",
+   "ratings": {
+      "damage": ,
+      "utility": ,
+      "survivability": ,
+      "complexity":
+   },
+   "releaseDate": "",
+   "stats": {
+      "NAME HERE": {
+         "hp": ,
+         "hpPerLevel": ,
+         "hpRegen": ,
+         "hpRegenPerLevel": ,
+         "mana": ,
+         "manaPerLevel": ,
+         "manaRegen": ,
+         "manaRegenPerLevel":
+      }
+   },
+   "abilities": {
+      "NAME HERE": [
+         {
+            "icon": "",
+            "manaCost": ,
+            "name": "",
+            "description": "",
+            "cooldown": ,
+            "shortcut": "Q"
+         },
+         {
+            "icon": "",
+            "manaCost": ,
+            "name": "",
+            "description": "",
+            "cooldown": ,
+            "shortcut": "W"
+         },
+         {
+            "icon": "",
+            "manaCost": ,
+            "name": "",
+            "description": "",
+            "cooldown": ,
+            "shortcut": "E"
+         },
+         {
+            "icon": "",
+            "manaCost": ,
+            "heroic": true,
+            "name": "",
+            "description": "",
+            "cooldown": ,
+            "shortcut": "R"
+         },
+         {
+            "icon": "",
+            "manaCost": ,
+            "heroic": true,
+            "name": "",
+            "description": "",
+            "cooldown": ,
+            "shortcut": "R"
+         },
+         {
+            "trait": true,
+            "icon": "",
+            "name": "",
+            "description": "",
+            "cooldown":
+         }
+      ]
+   },
+   "talents": {
+      "1": [
+         {
+            "name": "",
+            "description": "",
+            "icon": "",
+            "cooldown":
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "cooldown":
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "cooldown":
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "cooldown":
+         }
+      ],
+      "4": [
+         {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "cooldown":
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "cooldown":
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "cooldown":
+         }
+      ],
+      "7": [
+         {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "cooldown":
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "cooldown":
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "cooldown":
+         }
+      ],
+      "10": [
+         {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "cooldown":
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "cooldown":
+         }
+      ],
+      "13": [
+         {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "cooldown":
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "cooldown":
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "cooldown":
+         }
+      ],
+      "16": [
+         {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "cooldown":
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "cooldown":
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "cooldown":
+         }
+      ],
+      "20": [
+         {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "cooldown": ,
+             "prerequisite": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "cooldown": ,
+             "prerequisite": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "cooldown":
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "cooldown":
+         }
+      ]
+   }
+},

@@ -1,0 +1,278 @@
+{
+   "name": "",
+   "title": "",
+   "description": "",
+   "icon": "",
+   "role": "",
+   "type": "",
+   "franchise": "",
+   "difficulty": "",
+   "ratings":
+   {
+      "damage": 0,
+      "utility": 0,
+      "survivability": 0,
+      "complexity": 0
+   },
+   "tags":
+   [
+       "","",""
+   ],
+   "stats": {
+      "NAME": {
+         "hp": 0,
+         "hpRegen": 0,
+         "mana": 0,
+         "manaRegen": 0,
+         "attackPerSec": 0,
+         "attackRange": 0,
+         "attackDamage": 0,
+         "physicalArmor": 0,
+         "magicalArmor": 0
+      }
+   },
+   "abilities": {
+      "NAME": [
+         {
+            "name": "",
+            "icon": "",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "Q",
+            "trait": false,
+            "heroic": false
+         },
+         {
+            "name": "",
+            "icon": "",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "W",
+            "trait": false,
+            "heroic": false
+         },
+         {
+            "name": "",
+            "icon": "",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "E",
+            "trait": false,
+            "heroic": false
+         },
+         {
+            "name": "",
+            "icon": "",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "R",
+            "trait": false,
+            "heroic": true
+         },
+         {
+            "name": "",
+            "icon": "",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "R",
+            "trait": false,
+            "heroic": true
+         },
+         {
+            "name": "",
+            "icon": "",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "D",
+            "trait": true,
+            "heroic": false
+         }
+      ]
+   },
+   "talents": {
+      "1": [
+         {
+            "name": "",
+            "description": "",
+            "icon": "",
+            "quest": false,
+            "questDescription": "",
+            "rewardDescription": ""
+         },
+         {
+            "name": "",
+            "description": "",
+            "icon": "",
+            "quest": false,
+            "questDescription": "",
+            "rewardDescription": ""
+         },
+         {
+            "name": "",
+            "description": "",
+            "icon": "",
+            "quest": false,
+            "questDescription": "",
+            "rewardDescription": ""
+         }
+      ],
+      "4": [
+          {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          }
+      ],
+      "7": [
+          {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          }
+      ],
+      "10": [
+          {
+             "name": "",
+             "description": "",
+             "icon": "",
+          },
+          {
+             "name": "",
+             "description": "",
+             "icon": "",
+          }
+      ],
+      "13": [
+          {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          }
+      ],
+      "16": [
+          {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          }
+      ],
+      "20": [
+          {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": "",
+             "require": ""
+          },
+          {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": "",
+             "require": ""
+          },
+          {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": "",
+          },
+          {
+             "name": "",
+             "description": "",
+             "icon": "",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          }
+      ]
+   }
+}

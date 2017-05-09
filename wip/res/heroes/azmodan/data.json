@@ -1,0 +1,294 @@
+{
+   "name": "Azmodan",
+   "title": "Lord of Sin",
+   "description": "A Summoner that can also deal high damage from far away.",
+   "icon": "azmodan/icon.png",
+   "role": "Specialist",
+   "type": "Ranged",
+   "franchise": "Diablo",
+   "difficulty": "Medium",
+   "ratings":
+   {
+      "damage": 3,
+      "utility": 6,
+      "survivability": 7,
+      "complexity": 5
+   },
+   "tags":
+   [
+       "azmodan","split push","summoner","long range"
+   ],
+   "stats": {
+      "Azmodan": {
+         "hp": 2847.52,
+         "hpRegen": 5.93,
+         "mana": 500.0,
+         "manaRegen": 3.0,
+         "attackPerSec": 1.0,
+         "attackRange": 5.50,
+         "attackDamage": 88.40,
+         "physicalArmor": 0,
+         "magicalArmor": 0
+      }
+   },
+   "abilities": {
+      "primary": [
+         {
+            "name": "Globe Of Annihilation",
+            "icon": "azmodan/spell/globe-of-annihilation.png",
+            "description": "Shoot a globe of destruction, dealing 170.56 damage on impact. Long range.",
+            "manaCost": 60,
+            "cooldown": 10,
+            "shortcut": "Q",
+            "trait": false,
+            "heroic": false
+         },
+         {
+            "name": "Summon Demon Warrior",
+            "icon": "azmodan/spell/summon-demon-warrior.png",
+            "description": "Spawn a Demon Warrior that marches toward a point. Warriors deal 38.48 damage per second and last for 10.5 seconds. \n\nStores up to 2 charges.",
+            "manaCost": 40,
+            "cooldown": 10,
+            "shortcut": "W",
+            "trait": false,
+            "heroic": false
+         },
+         {
+            "name": "All Shall Burn",
+            "icon": "azmodan/spell/all-shall-burn.png",
+            "description": "Channel a death beam on an enemy dealing 104 damage a second. The damage amount grows the longer it is channeled, to a maximum of 208 damage per second. Does 25% more damage to Structures.",
+            "manaCostPerSecond": 16,
+            "cooldown": 6,
+            "shortcut": "E",
+            "trait": false,
+            "heroic": false
+         },
+         {
+            "name": "Demonic Invasion",
+            "icon": "azmodan/spell/demonic-invasion.png",
+            "description": "Rain a small army of Demonic Grunts down on enemies, dealing 108.16 damage per impact. Demon Grunts deal 53.04 damage and have 379.6 health.",
+            "manaCost": 100,
+            "cooldown": 100,
+            "shortcut": "R",
+            "trait": false,
+            "heroic": true
+         },
+         {
+            "name": "Black Pool",
+            "icon": "azmodan/spell/black-pool.png",
+            "description": "Create a pool that empowers Azmodan, his Demons, and allied Minions, increasing their Basic Attack and Ability damage by 75%. Pools last 5 seconds.\n\nStores up to 2 charges.",
+            "manaCost": 60,
+            "cooldown": 20,
+            "shortcut": "R",
+            "trait": false,
+            "heroic": true
+         },
+         {
+            "name": "General of Hell",
+            "icon": "azmodan/spell/general-of-hell.png",
+            "description": "Summon a Demon Lieutenant at an allied Mercenary, Minion, or Azmodan's Summons. The Lieutenant will march with the target, granting 15% increased damage and 15% increased maximum Health to all nearby friendly Mercenaries, Minions, and Azmodan's Summons. Unlimited range.",
+            "manaCost": 0,
+            "cooldown": 30,
+            "shortcut": "D",
+            "trait": true,
+            "heroic": false
+         }
+      ]
+   },
+   "talents": {
+      "1": [
+         {
+            "name": "Taste for Blood",
+            "description": "",
+            "icon": "azmodan/talent/taste-for-blood.png",
+            "quest": false,
+            "questDescription": "Kill enemy Minions and Heroes within 1.5 seconds of being hit by Globe of Annihilation.",
+            "rewardDescription": "Enemy Minions that die increase its damage by 2.\n\nEnemy Heroes that die increase its damage by 10."
+         },
+         {
+            "name": "Sieging Wrath",
+            "description": "",
+            "icon": "azmodan/talent/sieging-wrath.png",
+            "quest": false,
+            "questDescription": "Every time Globe of Annihilation hits a Hero, its damage is increased by 4, up to 100.",
+            "rewardDescription": "After hitting 25 Heroes, the range of Globe of Annihilation is increased by 33% and its damage is increased by an additional 100."
+         },
+         {
+            "name": "Master of Destruction",
+            "description": "Reduces the Mana cost from 16 to 10 per second. Every 1.5 seconds spent channeling increases the range by 8,5%, to a maximum of 25%.",
+            "icon": "azmodan/talent/master-of-destruction.png",
+            "quest": false,
+            "questDescription": "",
+            "rewardDescription": ""
+         }
+      ],
+      "4": [
+          {
+             "name": "Gluttony",
+             "description": "All Shall Burn heals Azmodan for 25% of the damage dealt.",
+             "icon": "azmodan/talent/gluttony.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "Army of Hell",
+             "description": "Increases Demon Warrior's damage by 20% and reduces their Mana cost by 20.",
+             "icon": "azmodan/talent/army-of-hell.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "Hellish Hirelings",
+             "description": "The damage bonus from General of Hell is doubled on Mercenaries.",
+             "icon": "azmodan/talent/hellish-hirelings.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "Sin's Grasp",
+             "description": "Activate to curse an enemy Hero, dealing 257.4 damage over 8 seconds. Minion kills reduce this cooldown by 10 seconds. Can be cast while channeling All Shall Burn.",
+             "icon": "azmodan/talent/sins-grasp.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          }
+      ],
+      "7": [
+          {
+             "name": "Infernal Globe",
+             "description": "Globe of Annihilation's cast time is decreased by 40% and its missile speed is increased by 40%.",
+             "icon": "azmodan/talent/infernal-globe.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "Bound Minion",
+             "description": "Using General of Hell on a Minion grants them 75 Armor from non-Heroic sources, decreasing the damage they take by 75%, while also increasing the damage they deal to non-Heroic targets by 100%. Lasts 30 seconds.",
+             "icon": "azmodan/talent/bound-minion.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "Gluttonous Ward",
+             "description": "Activate to place a ward on the ground that restores 3.276% of Azmodan's maximum Health and Mana every second for 10 seconds. Can be cast while channeling All Shall Burn.",
+             "icon": "azmodan/talent/gluttonous-ward.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "March of Sin",
+             "description": "Increases Azmodan's Movement Speed while channeling All Shall Burn to 80% of normal speed.",
+             "icon": "azmodan/talent/march-of-sin.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          }
+      ],
+      "10": [
+          {
+             "name": "Demonic Invasion",
+             "description": "Rain a small army of Demonic Grunts down on enemies, dealing 108.16 damage per impact. Demon Grunts deal 53.04 damage and have 379.6 health.",
+             "icon": "azmodan/talent/demonic-invasion.png"
+          },
+          {
+             "name": "Black Pool",
+             "description": "Create a pool that empowers Azmodan, his Demons, and allied Minions, increasing their Basic Attack and Ability damage by 75%. Pools last 5 seconds.\n\nStores up to 2 charges.",
+             "icon": "azmodan/talent/black-pool.png"
+          }
+      ],
+      "13": [
+          {
+             "name": "Hellforged Armor",
+             "description": "Demon Warriors deal 10.4 damage to nearby enemies every second and are granted 50 Armor against non-Heroic sources, decreasing the damage they take 50%.",
+             "icon": "azmodan/talent/hellforged-armor.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "Hedonism",
+             "description": "Reduces Globe of Annihilation's Mana cost by 30.",
+             "icon": "azmodan/talent/hedonism.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "Infused Power",
+             "description": "All Shall Burn's damage growth maximum is increased by 40%.",
+             "icon": "azmodan/talent/infused-power.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          }
+      ],
+      "16": [
+          {
+             "name": "Battleborn",
+             "description": "If Globe of Annihilation hits an enemy, a Demon Warrior is summoned at the impact point.",
+             "icon": "azmodan/talent/battleborn.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "Demonic Smite",
+             "description": "Every 7.5 seconds, the Demon Lieutenant will blast a non-Heroic unit dealing 427.44 damage.",
+             "icon": "azmodan/talent/demonic-smite.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "Sin for Sin",
+             "description": "Activate to deal 10% of target enemy Hero's Max Health and heal for twice that amount. Can be cast while channeling All Shall Burn.",
+             "icon": "azmodan/talent/sin-for-sin.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          }
+      ],
+      "20": [
+          {
+             "name": "Perishing Flame",
+             "description": "When the Grunts die they explode, dealing 70.72 damage to nearby enemies. Deals 100% increased damage to Minions, Mercenaries, Monsters, and Structures.",
+             "icon": "azmodan/talent/perishing-blame.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": "",
+             "require": "Demonic Invasion"
+          },
+          {
+             "name": "Fifth Circle",
+             "description": "Black Pool makes Basic Attacks and Abilities slow enemies Attack and Movement Speeds by 40% for 3 seconds.",
+             "icon": "azmodan/talent/fifth-circle.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": "",
+             "require": "Black Pool"
+          },
+          {
+             "name": "Bolt of the Storm",
+             "description": "Activate to teleport to a nearby location.",
+             "icon": "azmodan/talent/bolt-of-the-storm.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "Forced Recruitment",
+             "description": "Reduces General of Hell's cooldown by 10 seconds and gains an additional charge.",
+             "icon": "azmodan/talent/forced-recruitment.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          }
+      ]
+   }
+}

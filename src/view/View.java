@@ -1,5 +1,6 @@
 package view;
 
+import com.sun.org.apache.xpath.internal.SourceTree;
 import controller.Controller;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -35,20 +36,22 @@ public class View implements Observer {
     Model model; //MVC's model
     Controller controller; //MVC's controller
 
+    MainScene main;
+
     //CONSTRUCTOR
     public View(Model model, Controller controller) {
         //Linking MVC elements
         this.controller = controller;
         this.model = model;
-        MainScene main = new MainScene(this);
+        this.main = new MainScene(model,this,controller);
     }
 
     @Override
     public void update(Observable o, Object arg) {
-
-    }
-
-    public Model getModel() {
-        return model;
+        main.getHeroesBox().getChildren().clear();
+        main.updateCenter(main.getHeroesBox(),main.getHeroesScrollBox(),model);
+        main.getDetailBox().getChildren().clear();
+        main.updateTop(main.getDetailBox(),model);
+        //updateLeft();
     }
 }

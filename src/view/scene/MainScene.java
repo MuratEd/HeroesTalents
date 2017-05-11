@@ -1,6 +1,5 @@
 package view.scene;
 
-import controller.Controller;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -14,14 +13,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.ScrollPane;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.scene.text.Font;
-import javafx.stage.Stage;
 import model.Model;
 import model.hero.Hero;
-import view.View;
 import view.element.HeroIcon;
 
 import java.util.Observable;
@@ -29,12 +25,8 @@ import java.util.Observer;
 import java.util.Random;
 
 public class MainScene implements Observer {
-
-    //VARIABLES
-    //MVC
-    Model model; //MVC's main model
-    View view; //MVC's main view
-    Controller controller; //MVC's main controller
+    Scene scene;
+    Model model;
 
     FlowPane heroesBox; //CENTER : Pane that contains icons of heroes in main menu
     ScrollPane heroesScrollBox; //CENTER : Scroll of that has the heroesBox FlowPane inside it
@@ -42,20 +34,11 @@ public class MainScene implements Observer {
     HBox bottomBox; //BOT : Box that display information about programm and is current state
     ListView<String> listBuild; //LEFT : List that display all build for selected hero
 
-    public MainScene(Model model,View view,Controller controller) {
+    public MainScene(Model model) {
         this.model = model;
-        this.view = view;
-        this.controller = controller;
-
-        setupView(model);
-    }
-
-    public void setupView(Model model) {
-        //Initialising main scene
-        Stage stage = new Stage();
         BorderPane pane = new BorderPane();
         pane.setPrefSize(1000,600);
-        Scene scene = new Scene(pane,1000,600);
+        scene = new Scene(pane,1000,600);
 
         //CENTER : Heroes selection zone
         heroesBox = new FlowPane(Orientation.HORIZONTAL);
@@ -76,15 +59,9 @@ public class MainScene implements Observer {
         //BOTTOM : Informations
         updateBot();
         pane.setBottom(bottomBox);
-
-        //Parameters of the stage and display
-        stage.setTitle("Heroes Talents");
-        stage.getIcons().add(new Image("res/icon.png"));
-        stage.setScene(scene);
-        stage.show();
     }
 
-    public void updateCenter(FlowPane heroesBox, ScrollPane scrollBox,Model model) {
+    public void updateCenter(FlowPane heroesBox, ScrollPane scrollBox, Model model) {
         VBox box;
         //For each hero in list heroesList from model...
         for(Hero h : model.getHeroesList()) {
@@ -109,7 +86,7 @@ public class MainScene implements Observer {
         heroesScrollBox.setContent(heroesBox);
     }
 
-    public void updateTop(HBox detailBox,Model model) {
+    public void updateTop(HBox detailBox, Model model) {
         VBox namesBox = new VBox();
         StackPane stackBox = new StackPane();
         for(Hero h : model.getHeroesList()) {
@@ -163,6 +140,10 @@ public class MainScene implements Observer {
         //updateLeft();
     }
 
+    public Scene getScene() {
+        return scene;
+    }
+
     public FlowPane getHeroesBox() {
         return heroesBox;
     }
@@ -177,9 +158,5 @@ public class MainScene implements Observer {
 
     public HBox getBottomBox() {
         return bottomBox;
-    }
-
-    public ListView<String> getListBuild() {
-        return listBuild;
     }
 }

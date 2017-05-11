@@ -19,7 +19,7 @@ public class Model extends Observable {
     //CONSTRUCTOR
     public Model() {
         //Setup the list of spells
-        createListSpells();
+        //createListSpells();
 
         //Setup the list of heroes
         createListHeroes();
@@ -30,11 +30,6 @@ public class Model extends Observable {
     private void createListHeroes() {
         //Reading of the CSV that contains Heroes datas with CSVFile object (see CSVFile class)
         CSVFile heroFile = new CSVFile("res/description/heroes.txt");
-        try {
-            heroFile.readCSV();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
         //Add all of the list into heroesList (see Variables)
         heroesList = new ArrayList<>();

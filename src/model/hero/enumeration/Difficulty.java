@@ -1,7 +1,8 @@
 package model.hero.enumeration;
 
-import com.sun.scenario.effect.impl.sw.java.JSWBlend_HARD_LIGHTPeer;
-
+/**
+ * Enumeration of difficulties of heroes, used in Hero class
+ */
 public enum Difficulty {
     EASY("Easy"),
     MEDIUM("Medium"),

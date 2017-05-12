@@ -1,7 +1,9 @@
 package model.hero;
 
+/**
+ * Class that regroup statistic of a hero, used in Hero class
+ */
 public class Statistic {
-    private String id;
     private double hp;
     private double hpRegen;
     private double mana;
@@ -12,8 +14,10 @@ public class Statistic {
     private int physicalArmor;
     private int magicalArmor;
 
+    /**
+     * Constructor that set all values of Statistic to 0
+     */
     public Statistic() {
-        this.id = "";
         this.hp = 0;
         this.hpRegen = 0;
         this.mana = 0;
@@ -23,9 +27,6 @@ public class Statistic {
         this.attackDamage = 0;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
     public void setHp(double hp) {
         this.hp = hp;
     }

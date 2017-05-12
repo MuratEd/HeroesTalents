@@ -17,11 +17,19 @@ public class JSONFile {
 
     Hero hero;
 
+    /**
+     * Constructor of JSONFile for Hero object, load and read JSON data
+     * @param path Path of the JSON file
+     */
     public JSONFile(String path) {
         this.hero = new Hero();
         readJson(path);
     }
 
+    /**
+     * Reading method for JSON that concerns Hero object
+     * @param path
+     */
     public void readJson(String path) {
         JSONParser parser = new JSONParser();
         try {
@@ -103,6 +111,10 @@ public class JSONFile {
         }
     }
 
+    /**
+     * Getter of Hero
+     * @return Hero create by JSONFile
+     */
     public Hero getHero() {
         return hero;
     }

@@ -1,5 +1,8 @@
 package model.hero.enumeration;
 
+/**
+ * Enumeration of gender of heroes, not used
+ */
 public enum Gender {
     MALE("Male"),
     FEMALE("Female");

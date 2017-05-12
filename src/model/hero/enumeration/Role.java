@@ -1,5 +1,8 @@
 package model.hero.enumeration;
 
+/**
+ * Enumeration of role of heroes, used in Hero class
+ */
 public enum Role {
     WARRIOR("Warrior"),
     ASSASSIN("Assassin"),

@@ -3,6 +3,7 @@ controller
 model
 model.file
 model.hero
+model.hero.enumeration
 view
 view.element
 view.scene

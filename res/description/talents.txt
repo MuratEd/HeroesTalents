@@ -1,1 +1,0 @@
-heroName ; tier ; level ; order ; talentName ; iconPath ; description ; questDescription ; rewardDescription ; keyAffected ; activable

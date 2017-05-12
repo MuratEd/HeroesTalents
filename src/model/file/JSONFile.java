@@ -1,85 +1,109 @@
 package model.file;
 
-import javax.json.Json;
-import javax.json.stream.JsonParser;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+import model.hero.Hero;
+
 import java.io.*;
+import java.util.ArrayList;
+import java.util.Set;
 
 /**
  * Class that read the JSON file given
  */
 public class JSONFile {
-    private String path;
-    private String jsonText;
 
-    /**
-     * Constructor that set up the path of the JSON file
-     * @param path Path of the JSON file
-     */
+    Hero hero;
+
     public JSONFile(String path) {
-        this.path = path;
+        this.hero = new Hero();
+        readJson(path);
+    }
+
+    public void readJson(String path) {
+        JSONParser parser = new JSONParser();
         try {
-            readFile();
-        } catch (IOException e) {
+            Object obj = parser.parse(new FileReader(path));
+            JSONObject jsonObject = (JSONObject)obj;
+
+            hero.setName((String)jsonObject.get("name"));
+            hero.setTitle((String)jsonObject.get("title"));
+            hero.setDescription((String)jsonObject.get("description"));
+            hero.setIcon((String)jsonObject.get("icon"));
+            hero.setRole((String)jsonObject.get("role"));
+            hero.setType((String)jsonObject.get("type"));
+            hero.setFranchise((String)jsonObject.get("franchise"));
+            hero.setDifficulty((String)jsonObject.get("difficulty"));
+
+            //Ratings
+            JSONObject ratings = (JSONObject)jsonObject.get("ratings");
+            Long damage = (Long)ratings.get("damage");
+            Long utility = (Long)ratings.get("utility");
+            Long survivabitily = (Long)ratings.get("survivability");
+            Long complexity = (Long)ratings.get("complexity");
+            hero.setRatings(damage.intValue(),utility.intValue(),survivabitily.intValue(),complexity.intValue());
+
+            //Tags
+            ArrayList<String> tagsList = new ArrayList<>();
+            JSONArray tags = (JSONArray)jsonObject.get("tags");
+            for(Object s : tags) {
+                tagsList.add((String)s);
+            }
+
+            //Statistics
+            JSONObject stats = (JSONObject)jsonObject.get("stats");
+            Set<String> keySetStats = stats.keySet();
+            double hp = 0;
+            double hpRegen = 0;
+            double mana = 0;
+            double manaRegen = 0;
+            double attackPerSecond = 0;
+            double attackRange = 0;
+            double attackDamage = 0;
+            int physicalArmor = 0;
+            int magicalArmor = 0;
+            for(String s : keySetStats) {
+                JSONObject tmp = (JSONObject)stats.get(s);
+                hp = ((Double)tmp.get("hp"));
+                hpRegen = ((Double)tmp.get("hpRegen"));
+                mana = ((Double)tmp.get("mana"));
+                manaRegen = ((Double)tmp.get("manaRegen"));
+                attackPerSecond = ((Double)tmp.get("attackPerSec"));
+                attackRange = ((Double)tmp.get("attackRange"));
+                attackDamage = ((Double)tmp.get("attackDamage"));
+                physicalArmor = ((Long)tmp.get("physicalArmor")).intValue();
+                magicalArmor = ((Long)tmp.get("magicalArmor")).intValue();
+            }
+            hero.setStats(hp,hpRegen,mana,manaRegen,attackPerSecond,attackRange,attackDamage,physicalArmor,magicalArmor);
+
+            //Abilities
+            JSONObject abilities = (JSONObject)jsonObject.get("abilities");
+            Set<String> keySetAbilities = abilities.keySet();
+            for(String s : keySetAbilities) {
+                JSONArray jaTmp = (JSONArray)abilities.get(s);
+                for(int i=0 ; i<jaTmp.size() ; ++i) {
+                    JSONObject joTmp = (JSONObject)jaTmp.get(i);
+                }
+            }
+
+            //Talents
+            JSONObject talents = (JSONObject)jsonObject.get("talents");
+            Set<String> keySetTalentsLevel = talents.keySet();
+            for(String s : keySetTalentsLevel) {
+                JSONArray jaTmp = (JSONArray)talents.get(s);
+                for(int i=0 ; i<jaTmp.size() ; ++i) {
+                    JSONObject joTmp = (JSONObject)jaTmp.get(i);
+                }
+            }
+
+        } catch (Exception e) {
             e.printStackTrace();
         }
-        readJson();
     }
 
-    /**
-     * Reading method for JSON file
-     * @throws IOException Raise exception when file doesnt exist
-     */
-    public void readFile() throws IOException {
-        BufferedReader file = new BufferedReader(new FileReader(path));
-        String chainTmp;
-        this.jsonText = "";
-        while ((chainTmp = file.readLine()) != null) {
-            jsonText += chainTmp;
-        }
-        file.close();
+    public Hero getHero() {
+        return hero;
     }
-
-    /**
-     * Reading method for JSON String
-     */
-    private void readJson() {
-        JsonParser parser = Json.createParser(new StringReader(jsonText));
-        while (parser.hasNext()) {
-            JsonParser.Event event = parser.next();
-            switch(event) {
-                case START_ARRAY:
-                    System.out.println("Event START_ARRAY");
-                    break;
-                case END_ARRAY:
-                    System.out.println("Event END_ARRAY");
-                    break;
-                case START_OBJECT:
-                    System.out.println("Event START_OBJECT");
-                    break;
-                case END_OBJECT:
-                    System.out.println("Event END_OBJECT");
-                    break;
-                case VALUE_FALSE:
-                    System.out.println("Event VALUE_FALSE");
-                    break;
-                case VALUE_NULL:
-                    System.out.println("Event VALUE_NULL");
-                    break;
-                case VALUE_TRUE:
-                    System.out.println("Event VALUE_TRUE");
-                    break;
-                case KEY_NAME:
-                    System.out.println("Event KEY_NAME");
-                    break;
-                case VALUE_STRING:
-                    System.out.println("Event VALUE_STRING");
-                    break;
-                case VALUE_NUMBER:
-                    System.out.println("Event VALUE_NUMBER");
-                    break;
-            }
-        }
-    }
-
-
 }

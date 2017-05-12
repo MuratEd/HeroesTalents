@@ -1,0 +1,302 @@
+{
+   "name": "Auriel",
+   "title": "Archangel of Hope",
+   "description": "A Healer that excels when paired with a high-octane damage dealer.",
+   "icon": "auriel/icon.png",
+   "role": "Support",
+   "type": "Ranged",
+   "franchise": "Diablo",
+   "difficulty": "Medium",
+   "ratings":
+   {
+      "damage": 4,
+      "utility": 8,
+      "survivability": 5,
+      "complexity": 8
+   },
+   "tags":
+   [
+       "auriel","healer","stun","waveclear","aoe"
+   ],
+   "stats": {
+      "Auriel": {
+         "hp": 1924.0,
+         "hpRegen": 4.01,
+         "mana": 0.0,
+         "manaRegen": 0.0,
+         "attackPerSec": 1.25,
+         "attackRange": 5.50,
+         "attackDamage": 62.40,
+         "physicalArmor": 0,
+         "magicalArmor": 0
+      }
+   },
+   "abilities": {
+      "primary": [
+         {
+            "name": "Sacred Sweep",
+            "icon": "auriel/spell/sacred-sweep.png",
+            "description": "Sweep the area with sacred power, dealing 78 damage to enemies and an additional 156 damage to enemies caught in the center.",
+            "manaCost": 0,
+            "cooldown": 8,
+            "shortcut": "Q",
+            "trait": false,
+            "heroic": false
+         },
+         {
+            "name": "Ray of Heaven",
+            "icon": "auriel/spell/ray-of-heaven.png",
+            "description": "Consume Auriel's stored energy and heal allied Heroes in the area for the amount of energy consumed.",
+            "manaCost": 0,
+            "cooldown": 4,
+            "shortcut": "W",
+            "trait": false,
+            "heroic": false
+         },
+         {
+            "name": "Detainment Strike",
+            "icon": "auriel/spell/detainment-strike.png",
+            "description": "Deal 104 damage to the first enemy Hero hit and knock them back. If they collide with terrain, they are also stunned for 1.25 seconds and take an additional 104 damage.",
+            "manaCost": 0,
+            "cooldown": 14,
+            "shortcut": "E",
+            "trait": false,
+            "heroic": false
+         },
+         {
+            "name": "Resurrect",
+            "icon": "auriel/spell/resurrect.png",
+            "description": "Channel on the spirit of a dead ally for 3 seconds, bringing them back to life with 50% of their maximum health at the location where they died.",
+            "manaCost": 0,
+            "cooldown": 70,
+            "shortcut": "R",
+            "trait": false,
+            "heroic": true
+         },
+         {
+            "name": "Crystal Aegis",
+            "icon": "auriel/spell/crystal-aegis.png",
+            "description": "Place an allied Hero into Stasis for 2 seconds. Upon expiration, Crystal Aegis deals 280.8 damage to all nearby enemies.",
+            "manaCost": 0,
+            "cooldown": 60,
+            "shortcut": "R",
+            "trait": false,
+            "heroic": true
+         },
+         {
+            "name": "Bestow Hope",
+            "icon": "auriel/spell/bestow-hope.png",
+            "description": "Passive: 40% of the damage Auriel deals to Heroes and 8% dealt to non-Heroes is stored as energy.\n\nBestow an allied Hero with Hope. While they remain near Auriel, damage they deal causes her to gain energy. Auriel can only have Bestow Hope on 1 ally at a time.",
+            "manaCost": 0,
+            "cooldown": 1.5,
+            "shortcut": "D",
+            "trait": true,
+            "heroic": false
+         }
+      ]
+   },
+   "talents": {
+      "1": [
+         {
+            "name": "Swift Sweep",
+            "description": "Increases the cast speed of Sacred Sweep by 50%.",
+            "icon": "auriel/talent/swift-sweep.png",
+            "quest": false,
+            "questDescription": "",
+            "rewardDescription": ""
+         },
+         {
+            "name": "Increasing Clarity",
+            "description": "",
+            "icon": "auriel/talent/increasing-clarity.png",
+            "quest": false,
+            "questDescription": "Every time Sacred Sweep hits a Hero in the center, increase the center damage by 2, up to 50.",
+            "rewardDescription": "After hitting 25 Heroes, this center damage bonus is increased to 120."
+         },
+         {
+            "name": "Righteous Assault",
+            "description": "Reduces the cooldown of Sacred Sweep by 2 seconds for each enemy Hero hit by its center, up to a total of 4 seconds.",
+            "icon": "auriel/talent/righteous-assault.png",
+            "quest": false,
+            "questDescription": "",
+            "rewardDescription": ""
+         },
+         {
+            "name": "Searing Light",
+            "description": "Ray of Heaven also deals damage to enemies in the area equal to 30% of the energy consumed.",
+            "icon": "auriel/talent/searing-light.png",
+            "quest": false,
+            "questDescription": "",
+            "rewardDescription": ""
+         }
+      ],
+      "4": [
+          {
+             "name": "Majestic Span",
+             "description": "Increases the radius of Sacred Sweep by 15%.",
+             "icon": "auriel/talent/majestic-span.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "Heavy Burden",
+             "description": "When an enemy Hero is stunned by Detainment Strike, their Movement Speed is slowed by 40% for 3 seconds after the stun.",
+             "icon": "auriel/talent/heavy-burden.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "Repeated Offense",
+             "description": "",
+             "icon": "auriel/talent/repeated-offense.png",
+             "quest": false,
+             "questDescription": "Every time Detainment Strike stuns a Hero, increase the stun damage by 10, up to 60.",
+             "rewardDescription": "After stunning 6 Heroes, increase this damage bonus to 200."
+          }
+      ],
+      "7": [
+          {
+             "name": "Bursting Light",
+             "description": "Reduces the cooldown of Ray of Heaven by 2 seconds.",
+             "icon": "auriel/talent/bursting-light.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "Glimmer of Hope",
+             "description": "Collecting a Regeneration Globe reduces the cost of Auriel's next Ray of Heaven by 50%.",
+             "icon": "auriel/talent/glimmer-of-hope.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "Empathic Link",
+             "description": "Auriel stores 20% of damage taken by allies with Bestow Hope.",
+             "icon": "auriel/talent/empathic-link.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+         },
+          {
+             "name": "Energized Cord",
+             "description": "Increases the energy stored from Auriel's Basic Attacks to 60.4% of the damage against Heroes and 42.08% of the damage against non-Heroes.\n\nDoes not affect Auriel's Bestow Hope ally.",
+             "icon": "auriel/talent/energized-cord.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          }
+      ],
+      "10": [
+          {
+             "name": "Resurrect",
+             "description": "Channel on the spirit of a dead ally for 3 seconds, bringing them back to life with 50% of their maximum health at the location where they died.",
+             "icon": "auriel/talent/resurrect.png"
+          },
+          {
+             "name": "Crystal Aegis",
+             "description": "Place an allied Hero into Stasis for 2 seconds. Upon expiration, Crystal Aegis deals 280.8 damage to all nearby enemies.",
+             "icon": "auriel/talent/crystal-aegis.png"
+          }
+      ],
+      "13": [
+          {
+             "name": "Blinding Flash",
+             "description": "Enemies hit by the center area of Sacred Sweep are blinded for 3 seconds.",
+             "icon": "auriel/talent/blinding-flash.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "Converging Force",
+             "description": "Enemies hit by the outer area are pushed slightly toward the center.",
+             "icon": "auriel/talent/converging-force.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "Piercing Lash",
+             "description": "Detainment Strike now pierces and hits all enemy Heroes in a line.",
+             "icon": "auriel/talent/piercing-lash.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "Repelling Strike",
+             "description": "Enemies hit by Detainment Strike are knocked back 35% farther.",
+             "icon": "auriel/talent/repelling-strike.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          }
+      ],
+      "16": [
+          {
+             "name": "Reservoir of Hope",
+             "description": "",
+             "icon": "auriel/talent/reservoir-of-hope.png",
+             "quest": true,
+             "questDescription": "Each maximum energy Ray of Heaven Auriel casts increases the maximum amount of energy that can be stored by 75.",
+             "rewardDescription": ""
+          },
+          {
+             "name": "Will of Heaven",
+             "description": "Allies with Bestow Hope gain 20% Attack Speed.",
+             "icon": "auriel/talent/will-of-heaven.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "Wrath of Heaven",
+             "description": "Allies with Bestow Hope gain 10% Spell Power.",
+             "icon": "auriel/talent/wrath-of-heaven.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          }
+      ],
+      "20": [
+          {
+             "name": "Light Speed",
+             "description": "Increases the healing of Resurrect to 100% of the ally's maximum Health, and they also gain 199.68% increased Movement Speed that decays over 4 seconds.",
+             "icon": "auriel/talent/light-speed.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": "",
+             "require": "Resurrect"
+          },
+          {
+             "name": "Diamond Resolve",
+             "description": "When Crystal Aegis expires, it grants the target 50 Armor for 5 seconds, reducing damage taken by 50%.",
+             "icon": "auriel/talent/diamond-resolve.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": "",
+             "require": "Crystal Aegis"
+          },
+          {
+             "name": "Angelic Flight",
+             "description": "After 2 seconds, fly to a target location.",
+             "icon": "auriel/talent/angelic-flight.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          },
+          {
+             "name": "Shield of Hope",
+             "description": "Activate to grant all nearby allied Heroes a shield for 3 seconds equal to 50% of the amount of Health they are missing.",
+             "icon": "auriel/talent/shield-of-hope.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+          }
+      ]
+   }
+}

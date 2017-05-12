@@ -2,8 +2,9 @@ package model;
 
 import javafx.scene.image.Image;
 import model.file.CSVFile;
+import model.file.JSONFile;
+import model.hero.Ability;
 import model.hero.Hero;
-import model.hero.Spell;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -13,18 +14,28 @@ public class Model extends Observable {
 
     //VARIABLES
     private ArrayList<Hero> heroesList; //List that contains datas of each hero (see Hero class)
-    private ArrayList<Spell> spellList; //List that contains datas of each spell (see Spell class)
     private String heroSelected;
 
     //CONSTRUCTOR
     public Model() {
+        createListHeroesJSON();
         //Setup the list of spells
         //createListSpells();
 
         //Setup the list of heroes
-        createListHeroes();
+        //createListHeroes();
     }
 
+    private void createListHeroesJSON() {
+        CSVFile metadata = new CSVFile("res/meta.csv");
+        heroesList = new ArrayList<>(metadata.getTable().size());
+        for(int i=0 ; i<metadata.getTable().size() ; ++i) {
+            JSONFile json = new JSONFile("res/heroes/"+metadata.getValue(i,0)+"/data.json");
+            heroesList.add(json.getHero());
+        }
+    }
+
+    /*
     //Method dedicate to constructor of Model
     //Read the CSV of heroes and load it into heroesList variable
     private void createListHeroes() {
@@ -38,7 +49,7 @@ public class Model extends Observable {
             String title = heroFile.getValue(i,1);
             Image img = new Image(heroFile.getValue(i,2));
             //SpellList spellList = new SpellList(this,name);
-            heroesList.add(new Hero(name,title,img/*,spellList*/));
+            heroesList.add(new Hero(name,title,img));
         }
     }
 
@@ -67,6 +78,7 @@ public class Model extends Observable {
             ));
         }
     }
+    */
 
     //GETTER SETTER
     public ArrayList<Hero> getHeroesList() {
@@ -79,8 +91,5 @@ public class Model extends Observable {
         this.heroSelected = heroSelected;
         setChanged();
         notifyObservers();
-    }
-    public ArrayList<Spell> getSpellList() {
-        return spellList;
     }
 }

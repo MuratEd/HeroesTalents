@@ -67,7 +67,7 @@ public class MainScene implements Observer {
         for(Hero h : model.getHeroesList()) {
             //Create his icon and add it into heroesBox FlowPane
             box = new VBox(); //Box that will be modify in HeroIcon Constructor (adding portrait and name)
-            new HeroIcon(new ImageView(h.getPortrait()),new Label(h.getName()),box,model);
+            new HeroIcon(new ImageView(h.getIcon()),new Label(h.getName()),box,model);
             heroesBox.setMargin(box,new Insets(5));
             heroesBox.getChildren().add(box);
         }
@@ -91,7 +91,7 @@ public class MainScene implements Observer {
         StackPane stackBox = new StackPane();
         for(Hero h : model.getHeroesList()) {
             if(h.getName().equals(model.getHeroSelected())) {
-                ImageView portraitSelection = new ImageView(h.getPortrait());
+                ImageView portraitSelection = new ImageView(h.getIcon());
                 Label nameSelection = new Label(h.getName());
                 Label titleSelection = new Label(h.getTitle());
                 Button detailButton = new Button("See more  >>");

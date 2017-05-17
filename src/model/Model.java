@@ -15,10 +15,10 @@ public class Model extends Observable {
 
     //CONSTRUCTOR
     public Model() {
-        createListHeroesJSON();
+        createListHeroes();
     }
 
-    private void createListHeroesJSON() {
+    private void createListHeroes() {
         CSVFile metadata = new CSVFile("res/meta.csv");
         heroesList = new ArrayList<>(metadata.getTable().size());
         for(int i=0 ; i<metadata.getTable().size() ; ++i) {

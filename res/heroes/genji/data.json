@@ -1,0 +1,351 @@
+{
+   "name": "Genji",
+   "title": "Cybernetic Ninja",
+   "description": "A opportunistic, mobile Assassin who can tear apart a weak backline",
+   "icon": "genji/icon.png",
+   "role": "Assassin",
+   "type": "Ranged",
+   "franchise": "Overwatch",
+   "difficulty": "Hard",
+   "ratings":
+   {
+      "damage": 8,
+      "utility": 4,
+      "survivability": 4,
+      "complexity": 6
+   },
+   "tags":
+   [
+       "genji","ninja","cybernetic","overwatch","assassin","ranged","mobility","mobile","poke","squishy"
+   ],
+   "stats": {
+      "genji": {
+         "hp": 1664.0,
+         "hpRegen": 3.47,
+         "mana": 500.0,
+         "manaRegen": 3.0,
+         "attackPerSec": 1.0,
+         "attackRange": 5.50,
+         "attackDamage": 0.0,
+         "physicalArmor": 0,
+         "magicalArmor": 0
+      }
+   },
+   "abilities": {
+      "primary": [
+         {
+            "name": "",
+            "icon": "genji/spell/.png",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "Q",
+            "trait": false,
+            "heroic": false
+         },
+         {
+            "name": "",
+            "icon": "genji/spell/.png",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "W",
+            "trait": false,
+            "heroic": false
+         },
+         {
+            "name": "",
+            "icon": "genji/spell/.png",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "E",
+            "trait": false,
+            "heroic": false
+         },
+         {
+            "name": "",
+            "icon": "genji/spell/.png",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "R",
+            "trait": false,
+            "heroic": true
+         },
+         {
+            "name": "",
+            "icon": "genji/spell/.png",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "R",
+            "trait": false,
+            "heroic": true
+         },
+         {
+            "name": "",
+            "icon": "genji/spell/.png",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "Z",
+            "trait": false,
+            "heroic": false,
+            "mount": true
+         }
+     ],
+     "secondary": [
+         {
+            "name": "",
+            "icon": "genji/spell/.png",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "Q",
+            "trait": false,
+            "heroic": false
+         },
+         {
+            "name": "",
+            "icon": "genji/spell/.png",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "W",
+            "trait": false,
+            "heroic": false
+         },
+         {
+            "name": "",
+            "icon": "genji/spell/.png",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "E",
+            "trait": false,
+            "heroic": false
+         }
+     ]
+   },
+   "talents": {
+      "1": [
+         {
+            "name": "",
+            "description": "",
+            "icon": "genji/talent/.png",
+            "quest": false,
+            "questDescription": "",
+            "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "genji/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "genji/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+        },
+        {
+            "name": "",
+            "description": "",
+            "icon": "genji/talent/.png",
+            "quest": false,
+            "questDescription": "",
+            "rewardDescription": ""
+        }
+      ],
+      "4": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "genji/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "genji/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "genji/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "genji/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+         }
+      ],
+      "7": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "genji/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "genji/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "genji/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "genji/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+         }
+      ],
+      "10": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "genji/talent/.png"
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "genji/talent/.png"
+          }
+      ],
+      "13": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "genji/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "genji/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "genji/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "genji/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+         }
+      ],
+      "16": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "genji/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "genji/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "genji/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "genji/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+         }
+      ],
+      "20": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "genji/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": "",
+             "require": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "genji/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": "",
+             "require": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "genji/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "genji/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          }
+      ]
+   }
+}

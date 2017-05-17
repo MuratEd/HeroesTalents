@@ -1,0 +1,351 @@
+{
+   "name": "",
+   "title": "",
+   "description": "",
+   "icon": "heroname/icon.png",
+   "role": "",
+   "type": "",
+   "franchise": "",
+   "difficulty": "",
+   "ratings":
+   {
+      "damage": 0,
+      "utility": 0,
+      "survivability": 0,
+      "complexity": 0
+   },
+   "tags":
+   [
+       "","",""
+   ],
+   "stats": {
+      "heroname": {
+         "hp": 0.0,
+         "hpRegen": 0.0,
+         "mana": 0.0,
+         "manaRegen": 0.0,
+         "attackPerSec": 0.0,
+         "attackRange": 0.0,
+         "attackDamage": 0.0,
+         "physicalArmor": 0,
+         "magicalArmor": 0
+      }
+   },
+   "abilities": {
+      "primary": [
+         {
+            "name": "",
+            "icon": "heroname/spell/.png",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "Q",
+            "trait": false,
+            "heroic": false
+         },
+         {
+            "name": "",
+            "icon": "heroname/spell/.png",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "W",
+            "trait": false,
+            "heroic": false
+         },
+         {
+            "name": "",
+            "icon": "heroname/spell/.png",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "E",
+            "trait": false,
+            "heroic": false
+         },
+         {
+            "name": "",
+            "icon": "heroname/spell/.png",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "R",
+            "trait": false,
+            "heroic": true
+         },
+         {
+            "name": "",
+            "icon": "heroname/spell/.png",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "R",
+            "trait": false,
+            "heroic": true
+         },
+         {
+            "name": "",
+            "icon": "heroname/spell/.png",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "Z",
+            "trait": false,
+            "heroic": false,
+            "mount": true
+         }
+     ],
+     "secondary": [
+         {
+            "name": "",
+            "icon": "heroname/spell/.png",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "Q",
+            "trait": false,
+            "heroic": false
+         },
+         {
+            "name": "",
+            "icon": "heroname/spell/.png",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "W",
+            "trait": false,
+            "heroic": false
+         },
+         {
+            "name": "",
+            "icon": "heroname/spell/.png",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "E",
+            "trait": false,
+            "heroic": false
+         }
+     ]
+   },
+   "talents": {
+      "1": [
+         {
+            "name": "",
+            "description": "",
+            "icon": "heroname/talent/.png",
+            "quest": false,
+            "questDescription": "",
+            "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "heroname/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "heroname/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+        },
+        {
+            "name": "",
+            "description": "",
+            "icon": "heroname/talent/.png",
+            "quest": false,
+            "questDescription": "",
+            "rewardDescription": ""
+        }
+      ],
+      "4": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "heroname/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "heroname/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "heroname/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "heroname/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+         }
+      ],
+      "7": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "heroname/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "heroname/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "heroname/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "heroname/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+         }
+      ],
+      "10": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "heroname/talent/.png"
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "heroname/talent/.png"
+          }
+      ],
+      "13": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "heroname/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "heroname/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "heroname/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "heroname/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+         }
+      ],
+      "16": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "heroname/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "heroname/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "heroname/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "heroname/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+         }
+      ],
+      "20": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "heroname/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": "",
+             "require": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "heroname/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": "",
+             "require": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "heroname/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "heroname/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          }
+      ]
+   }
+}

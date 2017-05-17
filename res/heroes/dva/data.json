@@ -1,0 +1,248 @@
+{
+   "name": "D.Va",
+   "title": "MEKA Pilot",
+   "description": "",
+   "icon": "dva/icon.png",
+   "role": "Warrior",
+   "type": "Ranged",
+   "franchise": "Overwatch",
+   "difficulty": "",
+   "ratings":
+   {
+      "damage": 4,
+      "utility": 8,
+      "survivability": 8,
+      "complexity": 6
+   },
+   "tags":
+   [
+       "dva","meka","pilot","warrior","ranged","overwatch","diver","dive"
+   ],
+   "stats": {
+      "D.Va": {
+         "hp": 1153.36,
+         "hpRegen": 2.67,
+         "attackPerSec": 4.0,
+         "attackRange": 5.50,
+         "attackDamage": 57.20,
+         "physicalArmor": 0,
+         "magicalArmor": 0
+     },
+     "MEKA": {
+        "hp": 2142.40,
+        "hpRegen": 5.05,
+        "attackPerSec": 4.0,
+        "attackRange": 3.75,
+        "attackDamage": 23.40,
+        "physicalArmor": 0,
+        "magicalArmor": 0
+     }
+   },
+   "abilities": {
+      "primary": [
+         {
+            "name": "Boosters",
+            "icon": "dva/spell/boosters.png",
+            "description": "Increase D.Va's Movement Speed by 124.957% for 2 seconds. Enemies that are hit take 135 damage and are knocked away. D.Va cannot be Slowed while Boosters are active.",
+            "cooldown": 10,
+            "shortcut": "Q"
+         },
+         {
+            "name": "Defense Matrix",
+            "icon": "dva/spell/defense-matrix.png",
+            "description": "Channel a defensive field in the target direction for 3 seconds, reducing the damage dealt by enemy Heroes inside it by 75%. The Mech can move while channeling, but cannot turn. Damage dealt to the Mech from enemies within Defense Matrix still grants the same amount of Self-Destruct Charge.",
+            "cooldown": 10,
+            "shortcut": "W"
+         },
+         {
+            "name": "Self-Destruct",
+            "icon": "dva/spell/self-destruct.png",
+            "description": "Eject from the Mech, setting it to self-destruct after 4 seconds. Deals 400 to 1200 damage in a large area, depending on distance from center. Only deals 50% damage against Structures. Gain 1% Charge for every 2 seconds spent Basic Attacking, and 30% Charge per 100% of Mech Health lost.",
+            "shortcut": "E"
+         },
+         {
+            "name": "Bunny Hop",
+            "icon": "dva/spell/bunny-hop.png",
+            "description": "D.Va's Mech becomes Unstoppable and stomps every 0.5 seconds, dealing 60 damage and Slowing enemies by 40%. Lasts 4 seconds. Requires Mech Mode.",
+            "cooldown": 100,
+            "shortcut": "R",
+            "heroic": true
+         },
+         {
+            "name": "Big Shot",
+            "icon": "dva/spell/big-shot.png",
+            "description": "Deal 250 damage to all enemies in a line. The cooldown of Call Mech is reduced by 8 seconds for each enemy Hero hit. Requires Pilot Mode.",
+            "cooldown": 4,
+            "shortcut": "R",
+            "heroic": true
+         },
+         {
+            "name": "Mech Mode",
+            "icon": "dva/spell/mech-mode.png",
+            "description": "When D.Va's Mech dies, she is ejected out after 0.75 seconds and can continue to fight. D.Va's Mech only awards 50% of a normal Hero's experience upon dying.",
+            "trait": true
+         }
+     ],
+     "secondary": [
+         {
+            "name": "Call Mech",
+            "icon": "dva/spell/call-mech.png",
+            "description": "Call a new Mech and enter Mech Mode. Basic Attacks lower this cooldown by 0.5 seconds each.",
+            "cooldown": 45,
+            "shortcut": "E"
+         },
+         {
+            "name": "Pilot Mode",
+            "icon": "dva/spell/pilot-mode.png",
+            "description": "Basic Attacks reduce the cooldown of Call Mech by 0.5 seconds. As a Pilot, D.Va only awards 50% of a normal Hero's experience upon dying.",
+            "trait": true
+         }
+     ]
+   },
+   "talents": {
+      "1": [
+         {
+            "name": "Rush-down",
+            "description": "If D.Va neither takes nor deals damage during Boosters, its cooldown is lowered by 5 seconds.",
+            "icon": "dva/talent/rush-down.png"
+         },
+         {
+             "name": "Hit the Nitrous",
+             "description": "Initial speed of Boosters is increased to 558.773%, then decays to normal boost speed over 0.5 seconds. During this time, Boosters deals 170% extra damage.",
+             "icon": "dva/talent/hit-the-nitrous.png"
+         },
+         {
+             "name": "Crash Course",
+             "description": "",
+             "icon": "dva/talent/crash-course.png",
+             "quest": true,
+             "questDescription": "Damage enemy Heroes with Boosters.",
+             "rewardDescription": "After damaging 25 Heroes, each use of Boosters lowers its cooldown by 1 second per Hero hit."
+        },
+        {
+            "name": "Pro Moves",
+            "description": "D.Va's Mech gains 2% Movement Speed for 1 second every time it takes damage, up to 30%.",
+            "icon": "dva/talent/pro-moves.png"
+        }
+      ],
+      "4": [
+          {
+              "name": "Diverting Power",
+              "description": "The area of Defense Matrix is 100% wider and 25% longer, but D.Va cannot move for the duration.",
+              "icon": "dva/talent/diverting-power.png"
+          },
+          {
+              "name": "Get Through This!",
+              "description": "Increase the duration of Defense Matrix by 3 seconds.",
+              "icon": "dva/talent/get-through-this.png"
+          },
+          {
+              "name": "Fusion Generator",
+              "description": "Every time an enemy Hero deals damage while inside Defense Matrix, D.Va's Self-Destruct Charge increases by 1%. Max of 15% Charge gained per use.",
+              "icon": "dva/talent/fusion-generator.png"
+         },
+         {
+             "name": "Bring It On",
+             "description": "Self-Destruct's Charge amount gained from losing Mech Health is increased by 30%.",
+             "icon": "dva/talent/bring-it-on.png"
+         }
+      ],
+      "7": [
+          {
+              "name": "Coming Through",
+              "description": "Knockback distance of Boosters is increased by 100%.",
+              "icon": "dva/talent/coming-through.png"
+          },
+          {
+              "name": "Dazer Zone",
+              "description": "Enemy Heroes affected by Defense Matrix are Slowed by 20%.",
+              "icon": "dva/talent/dazer-zone.png"
+          },
+          {
+              "name": "Aggression Matrix",
+              "description": "Basic Attacks in Mech Mode against Heroes lower the cooldown of Defense Matrix by 0.25 seconds.",
+              "icon": "dva/talent/aggression-matrix.png"
+         },
+         {
+             "name": "Nuclear Option",
+             "description": "Increase Self Destruct's detonation timer by 3 seconds. Detonation damage increased by 50%. A new Mech can still be called after 4 seconds.",
+             "icon": "dva/talent/nuclear-option.png"
+         }
+      ],
+      "10": [
+          {
+              "name": "Bunny Hop",
+              "description": "D.Va's Mech becomes Unstoppable and stomps every 0.5 seconds, dealing 60 damage and Slowing enemies by 40%. Lasts 4 seconds. Requires Mech Mode.",
+              "icon": "dva/talent/bunny-hop.png"
+          },
+          {
+              "name": "Big Shot",
+              "description": "Deal 250 damage to all enemies in a line. The cooldown of Call Mech is reduced by 8 seconds for each enemy Hero hit. Requires Pilot Mode.",
+              "icon": "dva/talent/big-shot.png"
+          }
+      ],
+      "13": [
+          {
+              "name": "Expensive Plating",
+              "description": "Increase Mech Health by 20%, but also increase the cooldown of Call Mech by 15 seconds. This does not decrease the amount of Self-Destruct Charge gained.",
+              "icon": "dva/talent/expensive-plating.png"
+          },
+          {
+              "name": "Emergency Shielding",
+              "description": "When D.Va's Mech would be destroyed, it instead gains a Shield that absorbs 209.5 damage over 6 seconds. This effect has a 15 second cooldown.",
+              "icon": "dva/talent/emergency-shielding.png"
+          },
+         {
+             "name": "Ablative Armor",
+             "description": "Damage against D.Va's Mech that would deal 5.085% or less of its maximum Health are reduced by 50%. This does not decrease the amount of Self-Destruct Charge gained.",
+             "icon": "dva/talent/ablative-armor.png"
+         }
+      ],
+      "16": [
+          {
+              "name": "Torpedo Dash",
+              "description": "D.Va gains the Torpedo Dash ability, allowing her to dash forward and pass through enemies. Requires Pilot Mode.",
+              "icon": "dva/talent/torpedo-dash.png"
+          },
+          {
+              "name": "GG, WP",
+              "description": "Increase Pilot Mode Basic Attack damage by 75%. Participating in a Takedown while in Pilot Mode instantly refreshes the cooldown of Call Mech.",
+              "icon": "dva/talent/gg-wp.png"
+          },
+          {
+              "name": "Nanoweave Suit",
+              "description": "For 4 seconds after ejecting from her Mech, D.Va gains 50 Armor and her Basic Attacks grant 50% more cooldown reduction towards Call Mech.",
+              "icon": "dva/talent/nanoweave-suit.png"
+         },
+         {
+             "name": "Suppressing Fire",
+             "description": "Pilot Mode Basic Attacks have 20% increased range and Slow enemy Movement Speed by 20% for 2.5 seconds.",
+             "icon": "dva/talent/suppressing-fire.png"
+         }
+      ],
+      "20": [
+          {
+              "name": "Stop and Pop",
+              "description": "",
+              "icon": "dva/talent/stop-and-pop.png",
+             "require": "Bunny Hop"
+          },
+          {
+              "name": "Pew! Pew! Pew!",
+              "description": "Instead of a single shot, Big Shot fires 3 shots over 0.5 seconds. Each shot deals 50% damage.",
+              "icon": "dva/talent/pew-pew-pew.png",
+             "require": "Big Shot"
+          },
+          {
+              "name": "Concussive Pulse",
+              "description": "D.Va gains the Concussive Pulse ability, allowing her to deal 141 damage to enemies in a cone and knock them back. Requires Pilot Mode.",
+              "icon": "dva/talent/concussive-pulse.png"
+          },
+          {
+              "name": "MEKAfall",
+              "description": "Call Mech is instant and can target a location. Upon landing, the Mech deals 202 damage to enemies in the impact area.",
+              "icon": "dva/talent/mekafall.png"
+          }
+      ]
+   }
+}

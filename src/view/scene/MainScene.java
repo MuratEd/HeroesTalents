@@ -1,5 +1,8 @@
 package view.scene;
 
+import controller.CtrlMenuAbilities;
+import controller.CtrlMenuStats;
+import controller.CtrlMenuTalents;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -32,7 +35,7 @@ public class MainScene implements Observer {
     ScrollPane heroesScrollBox; //CENTER : Scroll of that has the heroesBox FlowPane inside it
     HBox detailBox; //TOP : Box that display information about the hero selected
     HBox bottomBox; //BOT : Box that display information about programm and is current state
-    ListView<String> listBuild; //LEFT : List that display all build for selected hero
+    VBox actionBox; //LEFT : Show possible actions to do with selected hero
 
     public MainScene(Model model) {
         this.model = model;
@@ -52,9 +55,10 @@ public class MainScene implements Observer {
         updateTop(detailBox,model);
         pane.setTop(detailBox);
 
-        //LEFTSIDE : List of build saved for hero selected
-        //updateLeft();
-        //pane.setLeft(listBuild);
+        //LEFTSIDE : Access button for different menus
+        actionBox = new VBox();
+        updateLeft(actionBox,model);
+        pane.setLeft(actionBox);
 
         //BOTTOM : Informations
         updateBot();
@@ -94,7 +98,7 @@ public class MainScene implements Observer {
                 ImageView portraitSelection = new ImageView(h.getIcon());
                 Label nameSelection = new Label(h.getName());
                 Label titleSelection = new Label(h.getTitle());
-                Button detailButton = new Button("See more  >>");
+                //Button detailButton = new Button("See more  >>");
 
                 detailBox.setMargin(portraitSelection,new Insets(5));
                 detailBox.setMargin(namesBox,new Insets(10));
@@ -102,10 +106,10 @@ public class MainScene implements Observer {
                 titleSelection.setFont(new Font(15));
                 namesBox.getChildren().addAll(nameSelection,titleSelection);
                 namesBox.setAlignment(Pos.CENTER_LEFT);
-                detailButton.setFont(new Font(20));
+                //detailButton.setFont(new Font(20));
                 stackBox.setAlignment(Pos.CENTER_RIGHT);
-                StackPane.setMargin(detailButton,new Insets(40));
-                stackBox.getChildren().add(detailButton);
+                //StackPane.setMargin(detailButton,new Insets(40));
+                //stackBox.getChildren().add(detailButton);
 
                 detailBox.getChildren().addAll(portraitSelection,namesBox,stackBox);
                 HBox.setHgrow(stackBox, Priority.ALWAYS);
@@ -113,19 +117,28 @@ public class MainScene implements Observer {
         }
     }
 
-    public void updateLeft() {
-        listBuild = new ListView<String>();
-        ObservableList<String> list = FXCollections.observableArrayList();
-        for(int i = 0; i<new Random().nextInt(8)+1; ++i) {
-            list.add("Saved build n°"+(i+1));
-        }
-        //Read builds saved of the hero selected
-        listBuild.setItems(list);
+    public void updateLeft(VBox actionBox, Model model) {
+        Button statsButton = new Button("Stats");
+        statsButton.setAlignment(Pos.CENTER);
+        statsButton.setMaxWidth(Double.MAX_VALUE);
+        statsButton.setOnAction(new CtrlMenuStats(model));
+        Button abilitiesButton = new Button("Abilities");
+        abilitiesButton.setAlignment(Pos.CENTER);
+        abilitiesButton.setMaxWidth(Double.MAX_VALUE);
+        abilitiesButton.setOnAction(new CtrlMenuAbilities(model));
+        Button talentsButton = new Button("Talents");
+        talentsButton.setAlignment(Pos.CENTER);
+        talentsButton.setMaxWidth(Double.MAX_VALUE);
+        talentsButton.setOnAction(new CtrlMenuTalents(model));
+        actionBox.setMargin(statsButton,new Insets(5));
+        actionBox.setMargin(abilitiesButton,new Insets(5));
+        actionBox.setMargin(talentsButton,new Insets(5));
+        actionBox.getChildren().addAll(statsButton,abilitiesButton,talentsButton);
     }
 
     public void updateBot() {
         bottomBox = new HBox();
-        Label botLabel = new Label("Updated for Patch 24.4 (Cassia)");
+        Label botLabel = new Label("Updated for Patch 25.4 (D.Va)");
         botLabel.setFont(new Font(12));
         HBox.setMargin(botLabel,new Insets(2));
         bottomBox.getChildren().add(botLabel);
@@ -137,7 +150,7 @@ public class MainScene implements Observer {
         updateCenter(heroesBox,heroesScrollBox,model);
         detailBox.getChildren().clear();
         updateTop(detailBox,model);
-        //updateLeft();
+        updateLeft(actionBox,model);
     }
 
     public Scene getScene() {

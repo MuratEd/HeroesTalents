@@ -1,0 +1,308 @@
+{
+   "name": "Tyrande",
+   "title": "High Priestess of Elune",
+   "description": "",
+   "icon": "tyrande/icon.png",
+   "role": "Support",
+   "type": "Ranged",
+   "franchise": "Warcraft",
+   "difficulty": "",
+   "ratings":
+   {
+      "damage": 5,
+      "utility": 7,
+      "survivability": 4,
+      "complexity": 7
+   },
+   "tags":
+   [
+       "tyrande","high","priestess","elune","support","warcraft","ranged","scout","vision","utility","stun","cc"
+   ],
+   "stats": {
+      "Tyrande": {
+         "hp": 1654.64,
+         "hpRegen": 3.45,
+         "mana": 500.0,
+         "manaRegen": 3.0,
+         "attackPerSec": 1.25,
+         "attackRange": 5.50,
+         "attackDamage": 85.28,
+         "physicalArmor": 0,
+         "magicalArmor": 0
+      }
+   },
+   "abilities": {
+      "primary": [
+         {
+            "name": "Light of Elune",
+            "icon": "tyrande/spell/light-of-elune.png",
+            "description": "Heal target ally for 270 Health. Basic Attacks reduce the cooldown of this Ability by 2 seconds.",
+            "manaCost": 30,
+            "cooldown": 12,
+            "shortcut": "Q"
+         },
+         {
+            "name": "Sentinel",
+            "icon": "tyrande/spell/sentinel.png",
+            "description": "Send an Owl that travels across the battleground revealing its path. Deals 173 damage to the first enemy Hero hit and reveals them for 5 seconds.\nEvery 8 Heroes hit by Sentinel decrease its Mana cost by 10 and cause it to pierce an additional target.",
+            "manaCost": 70,
+            "cooldown": 18,
+            "shortcut": "W"
+         },
+         {
+            "name": "Lunar Flare",
+            "icon": "tyrande/spell/lunar-flare.png",
+            "description": "After 0.75 seconds, deal 205 damage and Stun enemies in the target area for 0.75 seconds.",
+            "manaCost": 60,
+            "cooldown": 12,
+            "shortcut": "E"
+         },
+         {
+            "name": "Shadowstalk",
+            "icon": "tyrande/spell/shadowstalk.png",
+            "description": "Stealth and gain 30% Movement Speed. When Shadowstalk's Stealth is broken, gain 50% Attack Speed and retain its Movement Speed bonus for 5 seconds.",
+            "manaCost": 50,
+            "cooldown": 30,
+            "shortcut": "R",
+            "heroic": true
+         },
+         {
+            "name": "Starfall",
+            "icon": "tyrande/spell/starfall.png",
+            "description": "Deal 91 damage per second and slow enemies by 20% in an area. Lasts 6 seconds.",
+            "manaCost": 75,
+            "cooldown": 80,
+            "shortcut": "R",
+            "heroic": true
+         },
+         {
+            "name": "Hunter's Mark",
+            "icon": "tyrande/spell/hunters-mark.png",
+            "description": "Reveal a target enemy and lower their Armor by 25 for 4 seconds, increasing all damage taken by 25%. Cannot be used on Structures.",
+            "cooldown": 20,
+            "shortcut": "D",
+            "trait": true
+         }
+     ]
+   },
+   "talents": {
+      "1": [
+         {
+            "name": "",
+            "description": "",
+            "icon": "tyrande/talent/.png",
+            "quest": false,
+            "questDescription": "",
+            "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "tyrande/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "tyrande/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+        },
+        {
+            "name": "",
+            "description": "",
+            "icon": "tyrande/talent/.png",
+            "quest": false,
+            "questDescription": "",
+            "rewardDescription": ""
+        }
+      ],
+      "4": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "tyrande/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "tyrande/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "tyrande/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "tyrande/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+         }
+      ],
+      "7": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "tyrande/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "tyrande/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "tyrande/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "tyrande/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+         }
+      ],
+      "10": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "tyrande/talent/.png"
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "tyrande/talent/.png"
+          }
+      ],
+      "13": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "tyrande/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "tyrande/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "tyrande/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "tyrande/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+         }
+      ],
+      "16": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "tyrande/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "tyrande/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "tyrande/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "tyrande/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+         }
+      ],
+      "20": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "tyrande/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": "",
+             "require": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "tyrande/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": "",
+             "require": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "tyrande/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "tyrande/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          }
+      ]
+   }
+}

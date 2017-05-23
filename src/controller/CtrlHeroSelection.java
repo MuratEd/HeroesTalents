@@ -8,7 +8,8 @@ import model.Model;
  * Controller class that can modify the hero selection
  */
 public class CtrlHeroSelection extends Controller implements EventHandler {
-    String name;
+
+    private String name;
 
     /**
      * Constructor of hero selection controller

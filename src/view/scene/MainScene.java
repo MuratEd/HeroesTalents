@@ -21,7 +21,10 @@ import javafx.scene.layout.*;
 import javafx.scene.text.Font;
 import model.Model;
 import model.hero.Hero;
+import view.element.AbilitiesIcon;
 import view.element.HeroIcon;
+import view.element.StatsIcon;
+import view.element.TalentsIcon;
 
 import java.util.Observable;
 import java.util.Observer;
@@ -80,13 +83,9 @@ public class MainScene implements Observer, MakeScene {
         heroesScrollBox.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);    // Horizontal scroll bar
         heroesScrollBox.setVbarPolicy(ScrollPane.ScrollBarPolicy.AS_NEEDED);
         //Listener to change bounds of pane when window's size is modified
-        heroesScrollBox.viewportBoundsProperty().addListener(new ChangeListener<Bounds>()
-        {
-            @Override
-            public void changed(ObservableValue<? extends Bounds> ov, Bounds oldBounds, Bounds bounds) {
-                heroesBox.setPrefWidth(bounds.getWidth());
-                heroesBox.setPrefHeight(bounds.getHeight());
-            }
+        heroesScrollBox.viewportBoundsProperty().addListener((ov, oldBounds, bounds) -> {
+            heroesBox.setPrefWidth(bounds.getWidth());
+            heroesBox.setPrefHeight(bounds.getHeight());
         });
         heroesScrollBox.setContent(heroesBox);
     }
@@ -119,25 +118,27 @@ public class MainScene implements Observer, MakeScene {
     }
 
     public void updateLeft(VBox actionBox, Model model) {
-        Button statsButton = new Button("Stats");
-        statsButton.setAlignment(Pos.CENTER);
-        statsButton.setMaxWidth(Double.MAX_VALUE);
-        statsButton.setOnAction(new CtrlMenuStats(model));
+        HBox statsBox = new HBox();
+        StatsIcon statsIcon = new StatsIcon(statsBox,model);
+        statsBox.setAlignment(Pos.CENTER_LEFT);
+        statsBox.setMaxWidth(Double.MAX_VALUE);
 
-        Button abilitiesButton = new Button("Abilities");
-        abilitiesButton.setAlignment(Pos.CENTER);
-        abilitiesButton.setMaxWidth(Double.MAX_VALUE);
-        abilitiesButton.setOnAction(new CtrlMenuAbilities(model));
+        HBox abilitiesBox = new HBox();
+        AbilitiesIcon abilitiesIcon = new AbilitiesIcon(abilitiesBox,model);
+        abilitiesBox.setAlignment(Pos.CENTER_LEFT);
+        abilitiesBox.setMaxWidth(Double.MAX_VALUE);
 
-        Button talentsButton = new Button("Talents");
-        talentsButton.setAlignment(Pos.CENTER);
-        talentsButton.setMaxWidth(Double.MAX_VALUE);
-        talentsButton.setOnAction(new CtrlMenuTalents(model));
+        HBox talentsBox = new HBox();
+        TalentsIcon talentsIcon = new TalentsIcon(talentsBox,model);
+        talentsBox.setAlignment(Pos.CENTER_LEFT);
+        talentsBox.setMaxWidth(Double.MAX_VALUE);
 
-        actionBox.setMargin(statsButton,new Insets(5));
-        actionBox.setMargin(abilitiesButton,new Insets(5));
-        actionBox.setMargin(talentsButton,new Insets(5));
-        actionBox.getChildren().addAll(statsButton,abilitiesButton,talentsButton);
+        actionBox.setMargin(statsBox,new Insets(5));
+        actionBox.setMargin(abilitiesBox,new Insets(5));
+        actionBox.setMargin(talentsBox,new Insets(5));
+        actionBox.setPrefWidth(scene.getWidth() * 0.15);
+        scene.widthProperty().addListener((ov, oldBounds, bounds) -> actionBox.setPrefWidth(scene.getWidth() * 0.15));
+        actionBox.getChildren().addAll(statsBox,abilitiesBox,talentsBox);
     }
 
     public void updateBot() {

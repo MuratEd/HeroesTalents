@@ -16,7 +16,7 @@
    },
    "tags":
    [
-       "","",""
+       "heroname","herotitle","role","type","franchise","caracteristics"
    ],
    "stats": {
       "heroname": {
@@ -29,7 +29,18 @@
          "attackDamage": 0.0,
          "physicalArmor": 0,
          "magicalArmor": 0
-      }
+     },
+     "heroname2": {
+        "hp": 0.0,
+        "hpRegen": 0.0,
+        "mana": 0.0,
+        "manaRegen": 0.0,
+        "attackPerSec": 0.0,
+        "attackRange": 0.0,
+        "attackDamage": 0.0,
+        "physicalArmor": 0,
+        "magicalArmor": 0
+     }
    },
    "abilities": {
       "primary": [
@@ -37,40 +48,47 @@
             "name": "",
             "icon": "heroname/spell/.png",
             "description": "",
+            "passive": "",
             "manaCost": 0,
             "cooldown": 0,
-            "shortcut": "Q",
-            "trait": false,
-            "heroic": false
+            "shortcut": "Q"
          },
          {
             "name": "",
             "icon": "heroname/spell/.png",
             "description": "",
+            "passive": "",
             "manaCost": 0,
             "cooldown": 0,
-            "shortcut": "W",
-            "trait": false,
-            "heroic": false
+            "shortcut": "W"
          },
          {
             "name": "",
             "icon": "heroname/spell/.png",
             "description": "",
+            "passive": "",
             "manaCost": 0,
             "cooldown": 0,
-            "shortcut": "E",
-            "trait": false,
-            "heroic": false
+            "shortcut": "E"
          },
          {
             "name": "",
             "icon": "heroname/spell/.png",
             "description": "",
+            "passive": "",
             "manaCost": 0,
             "cooldown": 0,
             "shortcut": "R",
-            "trait": false,
+            "heroic": true
+         },
+         {
+            "name": "",
+            "icon": "heroname/spell/.png",
+            "description": "",
+            "passive": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "R",
             "heroic": true
          },
          {
@@ -79,10 +97,9 @@
             "description": "",
             "manaCost": 0,
             "cooldown": 0,
-            "shortcut": "R",
-            "trait": false,
-            "heroic": true
-         },
+            "shortcut": "D",
+            "trait": true
+        },
          {
             "name": "",
             "icon": "heroname/spell/.png",
@@ -90,8 +107,6 @@
             "manaCost": 0,
             "cooldown": 0,
             "shortcut": "Z",
-            "trait": false,
-            "heroic": false,
             "mount": true
          }
      ],
@@ -100,31 +115,28 @@
             "name": "",
             "icon": "heroname/spell/.png",
             "description": "",
+            "passive": "",
             "manaCost": 0,
             "cooldown": 0,
-            "shortcut": "Q",
-            "trait": false,
-            "heroic": false
+            "shortcut": "Q"
          },
          {
             "name": "",
             "icon": "heroname/spell/.png",
             "description": "",
+            "passive": "",
             "manaCost": 0,
             "cooldown": 0,
-            "shortcut": "W",
-            "trait": false,
-            "heroic": false
+            "shortcut": "W"
          },
          {
             "name": "",
             "icon": "heroname/spell/.png",
             "description": "",
+            "passive": "",
             "manaCost": 0,
             "cooldown": 0,
-            "shortcut": "E",
-            "trait": false,
-            "heroic": false
+            "shortcut": "E"
          }
      ]
    },

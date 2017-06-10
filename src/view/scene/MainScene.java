@@ -1,34 +1,20 @@
 package view.scene;
 
-import controller.CtrlMenuAbilities;
-import controller.CtrlMenuStats;
-import controller.CtrlMenuTalents;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.geometry.Bounds;
 import javafx.geometry.Insets;
 import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.scene.text.Font;
 import model.Model;
 import model.hero.Hero;
-import view.element.AbilitiesIcon;
-import view.element.HeroIcon;
-import view.element.StatsIcon;
-import view.element.TalentsIcon;
+import view.element.*;
 
 import java.util.Observable;
 import java.util.Observer;
-import java.util.Random;
 
 public class MainScene implements Observer, MakeScene {
     Scene scene;
@@ -92,30 +78,27 @@ public class MainScene implements Observer, MakeScene {
 
     public void updateTop(HBox detailBox, Model model) {
         VBox namesBox = new VBox();
-        StackPane stackBox = new StackPane();
+        VBox ratesBox = new VBox();
+        Pane blank = new Pane();
         for(Hero h : model.getHeroesList()) {
             if(h.getName().equals(model.getHeroSelected())) {
                 ImageView portraitSelection = new ImageView(h.getIcon());
                 Label nameSelection = new Label(h.getName());
                 Label titleSelection = new Label(h.getTitle());
-                //Button detailButton = new Button("See more  >>");
-
+                new RatesGraph(ratesBox,model);
                 detailBox.setMargin(portraitSelection,new Insets(5));
                 detailBox.setMargin(namesBox,new Insets(10));
                 nameSelection.setFont(new Font(25));
                 titleSelection.setFont(new Font(15));
                 namesBox.getChildren().addAll(nameSelection,titleSelection);
                 namesBox.setAlignment(Pos.CENTER_LEFT);
-                //detailButton.setFont(new Font(20));
-                stackBox.setAlignment(Pos.CENTER_RIGHT);
-                //StackPane.setMargin(detailButton,new Insets(40));
-                //stackBox.getChildren().add(detailButton);
-
-                detailBox.getChildren().addAll(portraitSelection,namesBox,stackBox);
-                HBox.setHgrow(stackBox, Priority.ALWAYS);
+                blank.setMinWidth(scene.getWidth()-310);
+                scene.widthProperty().addListener((ov, oldBounds, bounds) -> blank.setMinWidth(scene.getWidth()-310));
+                detailBox.getChildren().addAll(portraitSelection,namesBox,blank,ratesBox);
             }
         }
     }
+
 
     public void updateLeft(VBox actionBox, Model model) {
         HBox statsBox = new HBox();

@@ -176,4 +176,7 @@ public class Hero {
     public Image getIcon() {
         return icon;
     }
+    public Ratings getRatings() {
+        return ratings;
+    }
 }

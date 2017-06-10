@@ -39,4 +39,13 @@ public class Model extends Observable {
         setChanged();
         notifyObservers();
     }
+    public Hero getHero() {
+        Hero out = null;
+        for(Hero h : heroesList) {
+            if(h.getName()==heroSelected) {
+                out = h;
+            }
+        }
+        return out;
+    }
 }

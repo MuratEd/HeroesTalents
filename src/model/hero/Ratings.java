@@ -31,4 +31,16 @@ public class Ratings {
     public void setComplexity(int complexity) {
         this.complexity = complexity;
     }
+    public int getDamage() {
+        return damage;
+    }
+    public int getUtility() {
+        return utility;
+    }
+    public int getSurvivability() {
+        return survivability;
+    }
+    public int getComplexity() {
+        return complexity;
+    }
 }

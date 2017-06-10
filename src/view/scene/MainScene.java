@@ -27,7 +27,7 @@ import java.util.Observable;
 import java.util.Observer;
 import java.util.Random;
 
-public class MainScene implements Observer {
+public class MainScene implements Observer, MakeScene {
     Scene scene;
     Model model;
 
@@ -46,7 +46,6 @@ public class MainScene implements Observer {
         //CENTER : Heroes selection zone
         heroesBox = new FlowPane(Orientation.HORIZONTAL);
         heroesScrollBox = new ScrollPane();
-
         updateCenter(heroesBox,heroesScrollBox,model);
         pane.setCenter(heroesScrollBox);
 
@@ -57,7 +56,9 @@ public class MainScene implements Observer {
 
         //LEFTSIDE : Access button for different menus
         actionBox = new VBox();
-        updateLeft(actionBox,model);
+        if(model.getHeroSelected()!=null) {
+            updateLeft(actionBox, model);
+        }
         pane.setLeft(actionBox);
 
         //BOTTOM : Informations
@@ -122,14 +123,17 @@ public class MainScene implements Observer {
         statsButton.setAlignment(Pos.CENTER);
         statsButton.setMaxWidth(Double.MAX_VALUE);
         statsButton.setOnAction(new CtrlMenuStats(model));
+
         Button abilitiesButton = new Button("Abilities");
         abilitiesButton.setAlignment(Pos.CENTER);
         abilitiesButton.setMaxWidth(Double.MAX_VALUE);
         abilitiesButton.setOnAction(new CtrlMenuAbilities(model));
+
         Button talentsButton = new Button("Talents");
         talentsButton.setAlignment(Pos.CENTER);
         talentsButton.setMaxWidth(Double.MAX_VALUE);
         talentsButton.setOnAction(new CtrlMenuTalents(model));
+
         actionBox.setMargin(statsButton,new Insets(5));
         actionBox.setMargin(abilitiesButton,new Insets(5));
         actionBox.setMargin(talentsButton,new Insets(5));
@@ -150,26 +154,13 @@ public class MainScene implements Observer {
         updateCenter(heroesBox,heroesScrollBox,model);
         detailBox.getChildren().clear();
         updateTop(detailBox,model);
-        updateLeft(actionBox,model);
+        if(model.getHeroSelected()!=null) {
+            actionBox.getChildren().clear();
+            updateLeft(actionBox, model);
+        }
     }
 
     public Scene getScene() {
         return scene;
-    }
-
-    public FlowPane getHeroesBox() {
-        return heroesBox;
-    }
-
-    public ScrollPane getHeroesScrollBox() {
-        return heroesScrollBox;
-    }
-
-    public HBox getDetailBox() {
-        return detailBox;
-    }
-
-    public HBox getBottomBox() {
-        return bottomBox;
     }
 }

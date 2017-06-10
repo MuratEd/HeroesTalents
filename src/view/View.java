@@ -5,6 +5,7 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import model.Model;
 import view.scene.MainScene;
+import view.scene.MakeScene;
 
 import java.util.Observable;
 import java.util.Observer;
@@ -16,7 +17,7 @@ public class View implements Observer {
     Model model; //MVC's model
     Controller controller; //MVC's controller
 
-    MainScene main;
+    MakeScene main;
 
     //CONSTRUCTOR
     public View(Model model, Controller controller) {
@@ -34,10 +35,6 @@ public class View implements Observer {
 
     @Override
     public void update(Observable o, Object arg) {
-        main.getHeroesBox().getChildren().clear();
-        main.updateCenter(main.getHeroesBox(),main.getHeroesScrollBox(),model);
-        main.getDetailBox().getChildren().clear();
-        main.updateTop(main.getDetailBox(),model);
-        //updateLeft();
+        main.update(o,arg);
     }
 }

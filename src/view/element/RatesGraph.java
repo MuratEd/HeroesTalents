@@ -43,6 +43,10 @@ public class RatesGraph {
         utilityBox.setAlignment(Pos.CENTER_LEFT);
         survivabilityBox.setAlignment(Pos.CENTER_LEFT);
         complexityBox.setAlignment(Pos.CENTER_LEFT);
+        Tooltip.install(damageBox,new Tooltip("Damage"));
+        Tooltip.install(utilityBox,new Tooltip("Utility"));
+        Tooltip.install(survivabilityBox,new Tooltip("Survivability"));
+        Tooltip.install(complexityBox,new Tooltip("Complexity"));
 
         damageBox.getChildren().addAll(damageImage,damageValue);
         utilityBox.getChildren().addAll(utilityImage,utilityValue);

@@ -3,12 +3,14 @@ package view.scene;
 import javafx.geometry.Insets;
 import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.scene.text.Font;
+import javafx.stage.Stage;
 import model.Model;
 import model.hero.Hero;
 import view.element.*;
@@ -19,6 +21,7 @@ import java.util.Observer;
 public class MainScene implements Observer, MakeScene {
     Scene scene;
     Model model;
+    BorderPane pane;
 
     FlowPane heroesBox; //CENTER : Pane that contains icons of heroes in main menu
     ScrollPane heroesScrollBox; //CENTER : Scroll of that has the heroesBox FlowPane inside it
@@ -28,7 +31,7 @@ public class MainScene implements Observer, MakeScene {
 
     public MainScene(Model model) {
         this.model = model;
-        BorderPane pane = new BorderPane();
+        pane = new BorderPane();
         pane.setPrefSize(1000,600);
         scene = new Scene(pane,1000,600);
 
@@ -46,7 +49,7 @@ public class MainScene implements Observer, MakeScene {
         //LEFTSIDE : Access button for different menus
         actionBox = new VBox();
         if(model.getHeroSelected()!=null) {
-            updateLeft(actionBox, model);
+            updateLeft(actionBox,pane.getCenter() , model);
         }
         pane.setLeft(actionBox);
 
@@ -100,9 +103,9 @@ public class MainScene implements Observer, MakeScene {
     }
 
 
-    public void updateLeft(VBox actionBox, Model model) {
+    public void updateLeft(VBox actionBox, Node center , Model model) {
         HBox statsBox = new HBox();
-        StatsIcon statsIcon = new StatsIcon(statsBox,model);
+        StatsIcon statsIcon = new StatsIcon(statsBox,center,model);
         statsBox.setAlignment(Pos.CENTER_LEFT);
         statsBox.setMaxWidth(Double.MAX_VALUE);
 
@@ -116,12 +119,18 @@ public class MainScene implements Observer, MakeScene {
         talentsBox.setAlignment(Pos.CENTER_LEFT);
         talentsBox.setMaxWidth(Double.MAX_VALUE);
 
-        actionBox.setMargin(statsBox,new Insets(5));
+        HBox backBox = new HBox();
+        BackIcon backIcon = new BackIcon(backBox,model);
+        backBox.setAlignment(Pos.CENTER_LEFT);
+        backBox.setMaxWidth(Double.MAX_VALUE);
+
+        actionBox.setMargin(statsBox,new Insets(15,5,5,5));
         actionBox.setMargin(abilitiesBox,new Insets(5));
         actionBox.setMargin(talentsBox,new Insets(5));
+        actionBox.setMargin(backBox,new Insets(5));
         actionBox.setPrefWidth(scene.getWidth() * 0.15);
         scene.widthProperty().addListener((ov, oldBounds, bounds) -> actionBox.setPrefWidth(scene.getWidth() * 0.15));
-        actionBox.getChildren().addAll(statsBox,abilitiesBox,talentsBox);
+        actionBox.getChildren().addAll(statsBox,abilitiesBox,talentsBox,backBox);
     }
 
     public void updateBot() {
@@ -129,7 +138,22 @@ public class MainScene implements Observer, MakeScene {
         Label botLabel = new Label("Updated for Patch 25.4 (D.Va)");
         botLabel.setFont(new Font(12));
         HBox.setMargin(botLabel,new Insets(2));
-        bottomBox.getChildren().add(botLabel);
+        /*
+        Label about = new Label("About");
+        about.setAlignment(Pos.CENTER_RIGHT);
+        about.setOnMouseClicked(event -> {
+            Stage stage = new Stage();
+            Pane root = new Pane();
+            Scene scene = new Scene(root,240,120);
+            Label label = new Label("Heroes Talents\n\nDeveloped by Edouard Murat\n\n\nUpdated for Patch 25.4 (D.Va)");
+            label.setAlignment(Pos.CENTER);
+            root.getChildren().add(label);
+            stage.setScene(scene);
+            stage.setTitle("About");
+            stage.show();
+        });
+        */
+        bottomBox.getChildren().addAll(botLabel);
     }
 
     @Override
@@ -140,7 +164,7 @@ public class MainScene implements Observer, MakeScene {
         updateTop(detailBox,model);
         if(model.getHeroSelected()!=null) {
             actionBox.getChildren().clear();
-            updateLeft(actionBox, model);
+            updateLeft(actionBox,pane.getCenter() ,model);
         }
     }
 

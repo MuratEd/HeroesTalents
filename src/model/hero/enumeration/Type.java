@@ -1,8 +1,5 @@
 package model.hero.enumeration;
 
-/**
- * Enumeration of combat style of heroes, used in Hero class
- */
 public enum Type {
     MELEE("Melee"),
     RANGED("Ranged");

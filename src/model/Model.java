@@ -27,18 +27,20 @@ public class Model extends Observable {
         }
     }
 
-    //GETTER SETTER
     public ArrayList<Hero> getHeroesList() {
         return heroesList;
     }
+
     public String getHeroSelected() {
         return heroSelected;
     }
+
     public void setHeroSelected(String heroSelected) {
         this.heroSelected = heroSelected;
         setChanged();
         notifyObservers();
     }
+
     public Hero getHero() {
         Hero out = null;
         for(Hero h : heroesList) {

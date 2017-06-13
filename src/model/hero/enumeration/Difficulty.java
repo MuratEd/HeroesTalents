@@ -1,8 +1,5 @@
 package model.hero.enumeration;
 
-/**
- * Enumeration of difficulties of heroes, used in Hero class
- */
 public enum Difficulty {
     EASY("Easy"),
     MEDIUM("Medium"),

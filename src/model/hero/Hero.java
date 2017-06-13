@@ -5,9 +5,6 @@ import model.hero.enumeration.*;
 
 import java.util.ArrayList;
 
-/**
- * Class that define a hero with all of his properties
- */
 public class Hero {
     private String name;
     private String title;
@@ -23,9 +20,6 @@ public class Hero {
     private AbilityList abilities;
     private TalentTree talents;
 
-    /**
-     * Constructor of Hero, all atribute are set to null value
-     */
     public Hero() {
         this.name = null;
         this.title = null;

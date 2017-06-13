@@ -2,9 +2,6 @@ package model.hero;
 
 import javafx.scene.image.Image;
 
-/**
- * Class that describe one ability
- */
 public class Ability {
     private String name;
     private Image icon;
@@ -12,9 +9,6 @@ public class Ability {
     private int manaCost;
     private int cooldown;
 
-    /**
-     * Constructor of Ability, all attribute are set to null, "" or 0
-     */
     public Ability() {
         this.name = "";
         this.icon = null;

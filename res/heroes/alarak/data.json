@@ -1,0 +1,217 @@
+{
+   "name": "Alarak",
+   "title": "Highlord of the Tal'darim",
+   "description": "A combo Assasin that can move enemies around and punish mistakes.",
+   "icon": "alarak/icon.png",
+   "role": "Assassin",
+   "type": "Melee",
+   "franchise": "Starcraft",
+   "difficulty": "Hard",
+   "ratings":
+   {
+      "damage": 7,
+      "utility": 7,
+      "survivability": 6,
+      "complexity": 8
+   },
+   "tags":
+   [
+       "alarak","anti mage","combo","silence","control"
+   ],
+   "stats": {
+      "Alarak": {
+         "hp": 1976.0,
+         "hpRegen": 4.12,
+         "mana": 500.0,
+         "manaRegen": 3.0,
+         "attackPerSec": 1.0,
+         "attackRange": 1.50,
+         "attackDamage": 145.60,
+         "physicalArmor": 0,
+         "magicalArmor": 0
+      }
+   },
+   "abilities": {
+      "primary": [
+         {
+            "name": "Discord Strike",
+            "icon": "alarak/spell/discord-strike.png",
+            "description": "After a 0.5 second delay, enemies in front of Alarak take 175 damage and are silenced for 1.5 seconds.",
+            "manaCost": 45,
+            "cooldown": 8,
+            "shortcut": "Q"
+         },
+         {
+            "name": "Telekinesis",
+            "icon": "alarak/spell/telekinesis.png",
+            "description": "Create a force, pushing Alarak and all enemies hit from the targeted point towards the targeted direction. Deals 48 damage to enemies.",
+            "manaCost": 30,
+            "cooldown": 12,
+            "shortcut": "W"
+         },
+         {
+            "name": "Lighting Surge",
+            "icon": "alarak/spell/lighting-surge.png",
+            "description": "Deal 62 damage to an enemy and an additional 100% damage to enemies between Alarak and the target. Restore 70 health for each Hero hit.",
+            "manaCost": 25,
+            "cooldown": 6,
+            "shortcut": "E"
+         },
+         {
+            "name": "Counter-Strike",
+            "icon": "alarak/spell/counter-strike.png",
+            "description": "Alarak targets an area and channels for 1 second, becoming Protected and Unstoppable. After, if he took damage from an enemy Hero, he sends a shockwave that deals 275 damage.",
+            "manaCost": 50,
+            "cooldown": 30,
+            "shortcut": "R",
+            "heroic": true
+         },
+         {
+            "name": "Deadly Charge",
+            "icon": "alarak/spell/deadly-charge.png",
+            "description": "After channeling, Alarak charges forward dealing 200 damage to all enemies in his path. Distance is increased based on the amount of time channeled, up to 1.6 seconds.\n\nIssuing a Move order while this is channeling will cancel it at no cost. Taking damage will interrupt the channeling.",
+            "manaCost": 60,
+            "cooldown": 45,
+            "shortcut": "R",
+            "heroic": true
+         },
+         {
+            "name": "Sadism",
+            "icon": "alarak/spell/sadism.png",
+            "description": "Alarak's Ability damage and self-healing are increased by 100% against enemy Heroes. Takedowns increase Sadism by 3%, up to 30%. Sadism gained from Takedowns is lost on death.",
+            "trait": true
+         }
+      ]
+   },
+   "talents": {
+      "1": [
+          {
+             "name": "Sustaining Power",
+             "description": "Increases the healing Alarak receives from dealing damage to Heroes with Lightning Surge by 40%.",
+             "icon": "alarak/talent/sustaining-power.png"
+         },
+         {
+            "name": "Extended Lightning",
+            "description": "Reduce Sadism by 10%.",
+            "icon": "alarak/talent/extended-lighting.png",
+            "quest": true,
+            "questDescription": "Hit Heroes with the center of Lightning Surge.",
+            "rewardDescription": "After hitting 5 Heroes, increase Lightning Surge's range by 20%.\nAfter hitting 15 Heroes, Lightning Surge's center also Slows enemies by 40% for 2 seconds.\nAfter hitting 3 Heroes with a single cast, increase Sadism by 10% and instantly gain all other Rewards."
+         },
+         {
+            "name": "Ruthless Momentum",
+            "description": "Basic Abilities recharge 20% faster while above 80% Health.",
+            "icon": "alarak/talent/ruthless-momentus.png"
+         }
+      ],
+      "4": [
+          {
+             "name": "Chaos Reigns",
+             "description": "",
+             "icon": "alarak/talent/chaos-reigns.png",
+             "quest": true,
+             "questDescription": "Hit Heroes with Discord Strike.",
+             "rewardDescription": "After hitting 15 Heroes, increase Discord Strike's damage by 60.\nAfter hitting 2 Heroes with a single Discord Strike, increase its damage by 60.\nAfter hitting 3 Heroes with a single Discord Strike, increase its damage by 60 and instantly gain all other Rewards."
+          },
+          {
+             "name": "Negatively Charged",
+             "description": "Increase the Lightning Surge damage bonus to enemies between Alarak and his victim to 150%.",
+             "icon": "alarak/talent/negatively-charged.png",
+             "quest": true,
+             "questDescription": "Each Hero hit by the center of Lightning Surge permanently increases the damage bonus by 3%.",
+          },
+          {
+             "name": "Show of Force",
+             "description": "Heroes hit with 3 of Alarak's Abilities within 2 seconds take an additional 70 damage.",
+             "icon": "alarak/talent/show-of-force.png"
+          }
+      ],
+      "7": [
+          {
+             "name": "Dissonance",
+             "description": "Increase Discord Strike's Silence duration by 0.75 seconds.",
+             "icon": "alarak/talent/dissonance.png"
+          },
+          {
+             "name": "Hindered Motion",
+             "description": "Telekinesis Slows enemies by 25% for 2 seconds.",
+             "icon": "alarak/talent/hindered-motion.png"
+          },
+          {
+             "name": "Applied Force",
+             "description": "Reduce Sadism by 10%, but Telekinesis pushes 20% further and has 20% increased range.",
+             "icon": "alarak/talent/applied-force.png"
+          }
+      ],
+      "10": [
+          {
+             "name": "Deadly Charge",
+             "description": "After channeling, Alarak charges forward dealing 200 damage to all enemies in his path. Distance is increased based on the amount of time channeled, up to 1.6 seconds.\n\nIssuing a Move order while this is channeling will cancel it at no cost. Taking damage will interrupt the channeling.",
+             "icon": "alarak/talent/deadly-charge.png"
+          },
+          {
+              "name": "Counter-Strike",
+              "description": "Alarak targets an area and channels for 1 second, becoming Protected and Unstoppable. After, if he took damage from an enemy Hero, he sends a shockwave that deals 275 damage.",
+              "icon": "alarak/talent/counterstrike.png"
+          }
+      ],
+      "13": [
+          {
+             "name": "Blade of the Highlord",
+             "description": "Basic Attacks against Heroes increase Sadism by 6% for 4 seconds, stacking up to 30%. Basic Attacks against Heroes refresh this duration.",
+             "icon": "alarak/talent/blade-of-the-highlord.png"
+          },
+          {
+             "name": "Pure Malice",
+             "description": "Increase Sadism by 6% any time an allied Hero dies, up to 30%. Sadism gained from Pure Malice is lost on death.",
+             "icon": "alarak/talent/pure-malice.png"
+          },
+          {
+             "name": "Rite of Rak'Shir",
+             "description": "Activate to mark an enemy Hero for 300 seconds. Hitting the marked Hero with Discord Strike increases Sadism by 3%. Killing the marked Hero increases Sadism by 6% and lowers the cooldown of Rite of Rak'Shir to 10 seconds. Sadism gained from Rite of Rak'Shir is lost on death.",
+             "icon": "alarak/talent/rite-of-rakshir.png"
+          }
+      ],
+      "16": [
+          {
+             "name": "Lethal Onslaught",
+             "description": "Hitting an enemy Hero with Discord Strike grants 50% of Sadism's damage bonus to Alarak's Basic Attacks for 4 seconds. Basic Attacks against Heroes refresh this duration.",
+             "icon": "alarak/talent/lethal-onslaught.png"
+          },
+          {
+             "name": "Lightning Barrage",
+             "description": "Hitting an enemy Hero with the center of Lightning Surge allows it to be cast again for free on a different primary target within the next 2 seconds. This free cast cannot benefit from Lightning Barrage.",
+             "icon": "alarak/talent/lightning-barrage.png"
+          },
+          {
+             "name": "Mocking Strikes",
+             "description": "Basic Attacks against Stunned, Silenced, Slowed, or Rooted Heroes reduce the cooldown of Alarak's Basic Abilities by 2.5 seconds.",
+             "icon": "alarak/talent/mocking-strikes.png"
+         }
+      ],
+      "20": [
+          {
+             "name": "Counter-Strike",
+             "description": "Alarak targets an area and channels for 1 second, becoming Protected and Unstoppable. After, if he took damage from an enemy Hero, he sends a shockwave that deals 275 damage. This ability will take over your Trait button.",
+             "icon": "alarak/talent/counterstrike.png",
+             "require": "Deadly Charge"
+          },
+          {
+             "name": "Deadly Charge",
+             "description": "After channeling, Alarak charges forward dealing 200 damage to all enemies in his path. Distance is increased based on the amount of time channeled, up to 1.6 seconds. Issuing a Move order while this is channeling will cancel it at no cost. Taking damage will interrupt the channeling. This ability will take over Alarak's Trait button.",
+             "icon": "alarak/talent/deadly-charge.png",
+             "require": "Counter-Strike"
+          },
+          {
+             "name": "Last Laugh",
+             "description": "Activate teleport to the chosen location and remove all Roots, Slows, and damage over time effects. If Alarak fails to hit enemy Heroes 3 times with Basic Abilities within 4 seconds of using Last Laugh, his Health is reduced to 1.",
+             "icon": "alarak/talent/last-laugh.png"
+          },
+          {
+             "name": "Hasty Bargain",
+             "description": "Activate to permanently reduce Alarak's Sadism bonus by 4% and reset the cooldowns of his Basic Abilities.",
+             "icon": "alarak/talent/hasty-bargain.png"
+          }
+      ]
+   }
+}

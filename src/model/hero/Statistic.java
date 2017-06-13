@@ -1,8 +1,5 @@
 package model.hero;
 
-/**
- * Class that regroup statistic of a hero, used in Hero class
- */
 public class Statistic {
     private double hp;
     private double hpRegen;
@@ -14,9 +11,6 @@ public class Statistic {
     private int physicalArmor;
     private int magicalArmor;
 
-    /**
-     * Constructor that set all values of Statistic to 0
-     */
     public Statistic() {
         this.hp = 0;
         this.hpRegen = 0;

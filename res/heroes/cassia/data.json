@@ -1,0 +1,342 @@
+{
+   "name": "Cassia",
+   "title": "Amazon Warmatron",
+   "description": "",
+   "icon": "cassia/icon.png",
+   "role": "Assassin",
+   "type": "Melee",
+   "franchise": "Diablo",
+   "difficulty": "",
+   "ratings":
+   {
+      "damage": 7,
+      "utility": 5,
+      "survivability": 6,
+      "complexity": 4
+   },
+   "tags":
+   [
+       "cassia","amazon","warmatron","assassin","melee","diablo","blind"
+   ],
+   "stats": {
+      "cassia": {
+         "hp": 1726.0,
+         "hpRegen": 4.16,
+         "mana": 500.0,
+         "manaRegen": 3.0,
+         "attackPerSec": 1.33,
+         "attackRange": 2.0,
+         "attackDamage": 130.0,
+         "physicalArmor": 0,
+         "magicalArmor": 0
+      }
+   },
+   "abilities": {
+      "primary": [
+         {
+            "name": "Lightning Fury",
+            "icon": "cassia/spell/lightning-fury.png",
+            "description": "Hurl a lightning javelin that deals 175 damage to the first enemy hit and splits into two lightning bolts that deal 175 damage to enemies in their path.",
+            "manaCost": 30,
+            "cooldown": 4,
+            "shortcut": "Q"
+         },
+         {
+            "name": "Blinding Light",
+            "icon": "cassia/spell/blinding-light.png",
+            "description": "After 0.5 seconds, Blind enemies in the target area for 2 seconds.",
+            "passive" : "Cassia deals 15% increased damage to Blinded targets.",
+            "manaCost": 70,
+            "cooldown": 15,
+            "shortcut": "W"
+         },
+         {
+            "name": "Fend",
+            "icon": "cassia/spell/fend.png",
+            "description": "Charge at an enemy, and upon arriving channel for up to 1.5 seconds, dealing 78 damage to enemies in front of Cassia every 0.25 seconds. Deals 50% reduced damage to non-Heroes.",
+            "manaCost": 40,
+            "cooldown": 8,
+            "shortcut": "E"
+         },
+         {
+            "name": "Ball Lightning",
+            "icon": "cassia/spell/ball-lightning.png",
+            "description": "Throw a ball of lightning at an enemy Hero that bounces up to 6 times between nearby enemy Heroes and Cassia, dealing 180 damage to enemies hit.",
+            "manaCost": 60,
+            "cooldown": 60,
+            "shortcut": "R",
+            "heroic": true
+         },
+         {
+            "name": "Valkyrie",
+            "icon": "cassia/spell/valkyrie.png",
+            "description": "Summon a Valkyrie that rushes to Cassia after 0.75 seconds, pulling the first enemy Hero hit, dealing 225 damage and Stunning them for 0.5 seconds at the end of her path. The Valkyrie knocks back all other enemy Heroes in her way.",
+            "manaCost": 60,
+            "cooldown": 60,
+            "shortcut": "R",
+            "heroic": true
+         },
+         {
+            "name": "Avoidance",
+            "icon": "cassia/spell/avoidance.png",
+            "description": "While moving unmounted, Cassia gains 65 Physical Armor against Heroic Basic Attacks, reducing the damage taken by 65%.",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "D",
+            "trait": true
+         }
+     ],
+     "secondary": [
+         {
+            "name": "",
+            "icon": "cassia/spell/.png",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "Q",
+            "trait": false,
+            "heroic": false
+         },
+         {
+            "name": "",
+            "icon": "cassia/spell/.png",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "W",
+            "trait": false,
+            "heroic": false
+         },
+         {
+            "name": "",
+            "icon": "cassia/spell/.png",
+            "description": "",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "E",
+            "trait": false,
+            "heroic": false
+         }
+     ]
+   },
+   "talents": {
+      "1": [
+         {
+            "name": "",
+            "description": "",
+            "icon": "cassia/talent/.png",
+            "quest": false,
+            "questDescription": "",
+            "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "cassia/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "cassia/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+        },
+        {
+            "name": "",
+            "description": "",
+            "icon": "cassia/talent/.png",
+            "quest": false,
+            "questDescription": "",
+            "rewardDescription": ""
+        }
+      ],
+      "4": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "cassia/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "cassia/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "cassia/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "cassia/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+         }
+      ],
+      "7": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "cassia/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "cassia/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "cassia/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "cassia/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+         }
+      ],
+      "10": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "cassia/talent/.png"
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "cassia/talent/.png"
+          }
+      ],
+      "13": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "cassia/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "cassia/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "cassia/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "cassia/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+         }
+      ],
+      "16": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "cassia/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "cassia/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "cassia/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+         },
+         {
+             "name": "",
+             "description": "",
+             "icon": "cassia/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": ""
+         }
+      ],
+      "20": [
+          {
+              "name": "",
+              "description": "",
+              "icon": "cassia/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": "",
+             "require": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "cassia/talent/.png",
+             "quest": false,
+             "questDescription": "",
+             "rewardDescription": "",
+             "require": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "cassia/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          },
+          {
+              "name": "",
+              "description": "",
+              "icon": "cassia/talent/.png",
+              "quest": false,
+              "questDescription": "",
+              "rewardDescription": ""
+          }
+      ]
+   }
+}

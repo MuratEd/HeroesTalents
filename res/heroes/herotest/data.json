@@ -1,0 +1,303 @@
+{
+   "name": "Herotest",
+   "title": "Testitle",
+   "description": "Test Test Test Test Test",
+   "icon": "herotest/icon.png",
+   "role": "Assassin",
+   "type": "Ranged",
+   "franchise": "Warcraft",
+   "difficulty": "Easy",
+   "ratings":
+   {
+      "damage": 10,
+      "utility": 5,
+      "survivability": 7,
+      "complexity": 10
+   },
+   "tags":
+   [
+       "herotest","test","assassin","ranged","warcraft","stun","root"
+   ],
+   "stats": {
+      "herotest": {
+         "hp": 1200.0,
+         "hpRegen": 3.14,
+         "mana": 500.0,
+         "manaRegen": 3.0,
+         "attackPerSec": 1.0,
+         "attackRange": 5.50,
+         "attackDamage": 120.0,
+         "physicalArmor": 10,
+         "magicalArmor": 0
+     },
+     "heromorph": {
+        "hp": 1500.0,
+        "hpRegen": 3.69,
+        "mana": 500.0,
+        "manaRegen": 3.0,
+        "attackPerSec": 1.0,
+        "attackRange": 2.0,
+        "attackDamage": 155.0,
+        "physicalArmor": 0,
+        "magicalArmor": 20
+     }
+   },
+   "abilities": {
+      "primary": [
+         {
+            "name": "Spell Q",
+            "icon": "herotest/spell/spell.png",
+            "description": "Description spell Q",
+            "passive": "Passive spell Q",
+            "manaCost": 20,
+            "cooldown": 3,
+            "shortcut": "Q"
+         },
+         {
+            "name": "Spell W",
+            "icon": "herotest/spell/spell.png",
+            "description": "Description spell W",
+            "passive": "Passive spell W",
+            "manaCost": 50,
+            "cooldown": 8,
+            "shortcut": "W"
+         },
+         {
+            "name": "Spell E",
+            "icon": "herotest/spell/spell.png",
+            "description": "Description spell E",
+            "passive": "Passive spell E",
+            "manaCost": 80,
+            "cooldown": 12,
+            "shortcut": "E"
+         },
+         {
+            "name": "Heroic 1",
+            "icon": "herotest/spell/spell.png",
+            "description": "Description heroric R",
+            "passive": "Passive spell R",
+            "manaCost": 60,
+            "cooldown": 80,
+            "shortcut": "R",
+            "heroic": true
+         },
+         {
+            "name": "Heroic 2",
+            "icon": "herotest/spell/spell.png",
+            "description": "Description heroic R",
+            "passive": "Passive spell R",
+            "manaCost": 45,
+            "cooldown": 90,
+            "shortcut": "R",
+            "heroic": true
+         },
+         {
+            "name": "Combat Trait",
+            "icon": "herotest/spell/spell.png",
+            "description": "Description Trait",
+            "manaCost": 0,
+            "cooldown": 10,
+            "shortcut": "D",
+            "trait": true
+        },
+         {
+            "name": "Mount Z",
+            "icon": "herotest/spell/spell.png",
+            "description": "Description mount Z",
+            "manaCost": 0,
+            "cooldown": 0,
+            "shortcut": "Z",
+            "mount": true
+         }
+     ],
+     "secondary": [
+         {
+            "name": "Spell secondary Q",
+            "icon": "herotest/spell/spell.png",
+            "description": "Description secondary spell Q",
+            "passive": "Passive secondary spell Q",
+            "manaCost": 25,
+            "cooldown": 3,
+            "shortcut": "Q"
+         },
+         {
+            "name": "Spell secondary W",
+            "icon": "herotest/spell/spell.png",
+            "description": "Description secondary spell W",
+            "passive": "Passive secondary spell W",
+            "manaCost": 20,
+            "cooldown": 4,
+            "shortcut": "W"
+         },
+         {
+            "name": "Spell secondary E",
+            "icon": "herotest/spell/spell.png",
+            "description": "Description secondary spell E",
+            "passive": "Passive secondary spell E",
+            "manaCost": 30,
+            "cooldown": 4,
+            "shortcut": "E"
+         }
+     ]
+   },
+   "talents": {
+      "1": [
+         {
+            "name": "Tier 1 Talent 1",
+            "description": "Description Talent",
+            "icon": "herotest/talent/talent.png",
+            "quest": true,
+            "questDescription": "Description Quest",
+            "rewardDescription": "Description Reward"
+         },
+         {
+             "name": "Tier 1 Talent 2",
+             "description": "Description Talent",
+             "icon": "herotest/talent/talent.png",
+             "quest": true,
+             "questDescription": "Description Quest",
+             "rewardDescription": "Description Reward"
+         },
+         {
+             "name": "Tier 1 Talent 3",
+             "description": "Description Talent",
+             "icon": "herotest/talent/talent.png",
+             "quest": true,
+             "questDescription": "Description Quest",
+             "rewardDescription": "Description Reward"
+        },
+        {
+            "name": "Tier 1 Talent 4",
+            "description": "Description Talent",
+            "icon": "herotest/talent/talent.png",
+            "quest": true,
+            "questDescription": "Description Quest",
+            "rewardDescription": "Description Reward"
+        }
+      ],
+      "4": [
+          {
+              "name": "Tier 2 Talent 1",
+              "description": "Description Talent",
+              "icon": "herotest/talent/talent.png"
+          },
+          {
+              "name": "Tier 2 Talent 2",
+              "description": "Description Talent",
+              "icon": "herotest/talent/talent.png"
+          },
+          {
+              "name": "Tier 2 Talent 3",
+              "description": "Description Talent",
+              "icon": "herotest/talent/talent.png"
+         },
+         {
+             "name": "Tier 2 Talent 4",
+             "description": "Description Talent",
+             "icon": "herotest/talent/talent.png"
+         }
+      ],
+      "7": [
+          {
+              "name": "Tier 3 Talent 1",
+              "description": "Description Talent",
+              "icon": "herotest/talent/talent.png"
+          },
+          {
+              "name": "Tier 3 Talent 2",
+              "description": "Description Talent",
+              "icon": "herotest/talent/talent.png"
+          },
+          {
+              "name": "Tier 3 Talent 3",
+              "description": "Description Talent",
+              "icon": "herotest/talent/talent.png"
+         },
+         {
+             "name": "Tier 3 Talent 4",
+             "description": "Description Talent",
+             "icon": "herotest/talent/talent.png"
+         }
+      ],
+      "10": [
+          {
+              "name": "Talent Heroic 1",
+              "description": "Description heroic 1",
+              "icon": "herotest/talent/talent.png"
+          },
+          {
+              "name": "Talent Heroic 2",
+              "description": "Description heroic 2",
+              "icon": "herotest/talent/talent.png"
+          }
+      ],
+      "13": [
+          {
+              "name": "Tier 4 Talent 1",
+              "description": "Description Talent",
+              "icon": "herotest/talent/talent.png"
+          },
+          {
+              "name": "Tier 4 Talent 2",
+              "description": "Description Talent",
+              "icon": "herotest/talent/talent.png"
+          },
+          {
+              "name": "Tier 4 Talent 3",
+              "description": "Description Talent",
+              "icon": "herotest/talent/talent.png"
+         },
+         {
+             "name": "Tier 4 Talent 4",
+             "description": "Description Talent",
+             "icon": "herotest/talent/talent.png"
+         }
+      ],
+      "16": [
+          {
+              "name": "Tier 5 Talent 1",
+              "description": "Description Talent",
+              "icon": "herotest/talent/talent.png"
+          },
+          {
+              "name": "Tier 5 Talent 2",
+              "description": "Description Talent",
+              "icon": "herotest/talent/talent.png"
+          },
+          {
+              "name": "Tier 5 Talent 3",
+              "description": "Description Talent",
+              "icon": "herotest/talent/talent.png"
+         },
+         {
+             "name": "Tier 5 Talent 4",
+             "description": "Description Talent",
+             "icon": "herotest/talent/talent.png"
+        }
+      ],
+      "20": [
+          {
+              "name": "Talent Heroric 1 Up",
+              "description": "Description Talent",
+              "icon": "herotest/talent/talent.png",
+             "require": "Talent Heroic 1"
+          },
+          {
+              "name": "Talent Heroric 2 Up",
+              "description": "Description Talent",
+              "icon": "herotest/talent/talent.png",
+             "require": "Talent Heroic 2"
+          },
+          {
+              "name": "Tier 6 Talent 1",
+              "description": "Description Talent",
+              "icon": "herotest/talent/talent.png"
+         },
+         {
+             "name": "Tier 6 Talent 2",
+             "description": "Description Talent",
+             "icon": "herotest/talent/talent.png"
+        }
+      ]
+   }
+}
